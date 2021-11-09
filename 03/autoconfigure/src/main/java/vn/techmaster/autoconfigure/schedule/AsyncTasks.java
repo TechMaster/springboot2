@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @EnableAsync
 @EnableScheduling
-@ConditionalOnExpression("false")
+@ConditionalOnExpression("true")
 @Component
 public class AsyncTasks {
   @Async

@@ -8,8 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class APC implements ApplicationContextAware {
 
-  @Autowired
-  private ApplicationContext applicationContext1; // Lấy application context
+  @Autowired private ApplicationContext applicationContext1; // Lấy application context
   
   private ApplicationContext applicationContext2;
 

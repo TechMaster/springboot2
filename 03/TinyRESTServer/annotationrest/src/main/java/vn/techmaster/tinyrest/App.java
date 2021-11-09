@@ -43,9 +43,9 @@ public class App {
 
     static class FilmHandler implements HttpHandler {
         @Override
-        @ResponseBody(value = "XML")
+        @ResponseBody(value = "JSON")
         public void handle(HttpExchange t) throws IOException {
-            //Demo đọc được attribute trong annotation
+            // Demo đọc được attribute trong annotation
             Method method = new Object(){}.getClass().getEnclosingMethod();
             ResponseBody a = method.getAnnotation(ResponseBody.class);
             String responseType = a.value();
@@ -55,15 +55,20 @@ public class App {
             films.add(new Film("Bố Già", "Trấn Thành"));
             films.add(new Film("Squid Games", "Bong Jin Heok"));
 
-            Gson g = new Gson();
-            String response = g.toJson(films);
-            t.getResponseHeaders().add("Content-type", "application/json");
-            final byte[] rawResponseBody = response.getBytes(StandardCharsets.UTF_8);
-            t.getResponseHeaders().add("Content-length", Integer.toString(rawResponseBody.length));
-            t.sendResponseHeaders(200, rawResponseBody.length);
+            if (responseType.equals("JSON")) {
+                Gson g = new Gson();
+                String response = g.toJson(films);
+                t.getResponseHeaders().add("Content-type", "application/json");
+                final byte[] rawResponseBody = response.getBytes(StandardCharsets.UTF_8);
+                t.getResponseHeaders().add("Content-length", Integer.toString(rawResponseBody.length));
+                t.sendResponseHeaders(200, rawResponseBody.length);
 
-            t.getResponseBody().write(rawResponseBody);
-            t.close();
+                t.getResponseBody().write(rawResponseBody);
+                t.close();
+            } else {
+                //Xuat XML
+            }
+
         }
     }
 }
