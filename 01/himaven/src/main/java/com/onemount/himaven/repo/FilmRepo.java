@@ -20,4 +20,25 @@ public class FilmRepo {
   public List<Film> findAll() {
     return films;
   }
+
+
+
+  public String addNew(Film filmRequest) {
+    Film film = new Film(filmRequest.getTitle(), filmRequest.getDescription(), filmRequest.getActors());
+    films.add(film);
+    return film.getId();
+  }
+
+  //Cập nhật film
+  public String update(Film filmRequest) {
+   for (Film film : films) {
+     if(film.getId().equals(filmRequest.getId())) {
+       film.setActors(filmRequest.getActors());
+       film.setDescription(filmRequest.getDescription());
+      film.setTitle(filmRequest.getTitle());
+      return film.getId();
+     }
+   }
+    return null;
+  }
 }

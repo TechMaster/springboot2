@@ -31,7 +31,8 @@ public class FilmController {
 
   @PutMapping(value="/api/film")
   @ResponseStatus(HttpStatus.OK)
-  public String updateFilm(@RequestBody Film filmRequest) {      
+  public String updateFilm(@RequestBody Film filmRequest) {  
+      filmRequest.id = "022"; 
       return filmRepo.upsert(filmRequest);
-  }  
+  }
 }

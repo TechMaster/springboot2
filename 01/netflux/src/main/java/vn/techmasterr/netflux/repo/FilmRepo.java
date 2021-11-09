@@ -21,20 +21,20 @@ public class FilmRepo {
   }
 
   public Optional<Film> findById(String id) {
-    return films.stream().filter(x -> x.getId().equals(id)).findFirst();
+    return films.stream().filter(x -> x.id().equals(id)).findFirst();
   }
 
   public String create(Film filmRequest) {
-    var film  = new Film(filmRequest.getName(), filmRequest.getDescription(), filmRequest.getActors());
+    var film  = new Film(filmRequest.name(), filmRequest.description(), filmRequest.actors());
     films.add(film);
-    return film.getId();
+    return film.id();
   }
 
   public String upsert(Film filmRequest) {
     int index = 0;
     boolean found = false;
     for (var film : films) {
-      if (film.getId().equals(filmRequest.getId())) {
+      if (film.id().equals(filmRequest.id())) {
         found = true;
         break;
       }
@@ -46,6 +46,6 @@ public class FilmRepo {
       films.add(filmRequest);
     }
 
-    return filmRequest.getId();
+    return filmRequest.id();
   }
 }
