@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import vn.techmaster.hiaop.annotation.Benchmark;
 import vn.techmaster.hiaop.annotation.ReturnBody;
+import vn.techmaster.hiaop.exception.FilmException;
 import vn.techmaster.hiaop.model.Film;
 
 @Service
@@ -31,5 +32,10 @@ public class FilmService {
       new Film("Bố Già", "Trấn Thành"),
       new Film("Titanic", "James Cameron")
     );
+  }
+
+  public Film findById(String id) throws FilmException {
+    System.out.println("find Film By Id " + id);
+    throw new FilmException("Film not found");
   }
 }

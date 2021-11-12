@@ -20,6 +20,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
 import vn.techmaster.hiaop.annotation.ReturnBody;
+import vn.techmaster.hiaop.exception.FilmException;
 
 @Aspect
 @Component
@@ -38,12 +39,12 @@ public class ServiceAspect {
       'e', 'E', 'e', 'I', 'i', 'I', 'i', 'O', 'o', 'O', 'o', 'O', 'o', 'O', 'o', 'O', 'o', 'O', 'o', 'O', 'o', 'O', 'o',
       'O', 'o', 'O', 'o', 'O', 'o', 'O', 'o', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', };
 
-  @Before(value = "execution(* Account.doSomething(..))")
+  @Before(value = "execution(* Account.*(..))")
   public void beforeDoSomething(JoinPoint joinPoint) {
     System.out.println("Before method:" + joinPoint.getSignature());
   }
 
-  @After(value = "execution(* Account.doSomething(..))")
+  @After(value = "execution(* Account.*(..))")
   public void afterDoSomething(JoinPoint joinPoint) {
     System.out.println("After method:" + joinPoint.getSignature());
   }
@@ -74,9 +75,20 @@ public class ServiceAspect {
     System.out.println("Before Point Cut:" + joinPoint.getSignature());
   }
 
+  @After("all_methods_in_service()")
+  public void advice_after_all_methods_in_service(JoinPoint joinPoint) {
+    System.out.println("After Point Cut:" + joinPoint.getSignature());
+  }
+
+
   @AfterThrowing(value = "execution(* Account.transfer(..)) and args(amount)", throwing = "ex")
   public void transfer_exception(JoinPoint joinPoint, int amount, Exception ex) {
     System.out.println(ex);
+  }
+
+  @AfterThrowing(pointcut="execution(* FilmService.*(..))", throwing = "ex")
+  public void film_exception(JoinPoint joinPoint, FilmException ex) throws Throwable{
+    System.out.println(ex.getMessage());
   }
 
   @Around("@annotation(vn.techmaster.hiaop.annotation.Benchmark)")
