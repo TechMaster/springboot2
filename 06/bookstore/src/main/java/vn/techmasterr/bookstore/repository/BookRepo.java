@@ -3,8 +3,6 @@ package vn.techmasterr.bookstore.repository;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.github.javafaker.Faker;
-
 import org.springframework.stereotype.Repository;
 
 import vn.techmasterr.bookstore.dto.NewBook;

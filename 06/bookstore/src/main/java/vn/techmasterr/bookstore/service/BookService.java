@@ -1,25 +1,22 @@
 package vn.techmasterr.bookstore.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.github.javafaker.Faker;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import vn.techmasterr.bookstore.dto.BuyBook;
 import vn.techmasterr.bookstore.dto.NewBook;
 import vn.techmasterr.bookstore.exception.BookException;
 import vn.techmasterr.bookstore.model.Book;
+import vn.techmasterr.bookstore.model.BookInventory;
 import vn.techmasterr.bookstore.repository.BookInventoryRepo;
 import vn.techmasterr.bookstore.repository.BookRepo;
 
 @Service
-@EnableScheduling
-@ConditionalOnExpression("true")
 public class BookService {
   @Autowired
   private BookRepo bookRepo;
@@ -30,21 +27,23 @@ public class BookService {
     Create1000Books();
   }
 
+  /*
+
+  */
   public Book CreateNewBook(NewBook newBook) {
     Book book = bookRepo.createNewBook(newBook);
     try {
-      bookInventoryRepo.updateInventory(book.getId(), newBook.amount());
-      return book;
+      bookInventoryRepo.updateInventory(book.getId(), newBook.amount());      
     } catch (BookException e) {
-      e.printStackTrace();
+      e.printStackTrace();      
     }
+    return book;
   }
 
   public void Create1000Books() {
     Faker faker = new Faker();
     for (int i = 0; i < 1000; i++) {
       CreateNewBook(new NewBook(faker.book().author(), faker.book().title(), faker.number().numberBetween(0, 100)));
-      //Hãy viết hàm update inventory với BookId và newBook.getAmount
     }
   }
 
@@ -61,12 +60,12 @@ public class BookService {
 
   }
 
-  /*
-   * Quét tất cả các bản ghi BookInventory, nếu amount = 1 thì tạo Event tiến hành
-   * Order thêm 5 quyển nữa
-   */
-  @Scheduled(fixedDelay = 1000)
-  public void checkInventory() throws InterruptedException {
 
+  /*
+  Lấy danh sách Book Inventory thấp số lượng amount bằng 0 hoặc 1
+  */
+  public List<BookInventory> getLowStockBooks() {
+    
   }
+
 }
