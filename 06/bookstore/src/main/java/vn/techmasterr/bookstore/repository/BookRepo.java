@@ -3,10 +3,13 @@ package vn.techmasterr.bookstore.repository;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.github.javafaker.Faker;
+
 import org.springframework.stereotype.Repository;
 
 import vn.techmasterr.bookstore.dto.NewBook;
 import vn.techmasterr.bookstore.model.Book;
+import vn.techmasterr.bookstore.utils.GenerateId;
 
 @Repository
 public class BookRepo {
@@ -15,8 +18,10 @@ public class BookRepo {
   public BookRepo() {
     books = new ConcurrentHashMap<>();
   }
+
   public Book createNewBook(NewBook newBook) {
-    // TODO:
+    String bookId = GenerateId.generateUniqueId(5);
+    books.put(bookId, new Book(bookId, newBook.title(), newBook.author()));
     return null;
   }
 
