@@ -1,15 +1,19 @@
 package vn.techmasterr.bookstore.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import com.github.javafaker.Faker;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 import vn.techmasterr.bookstore.dto.BuyBook;
 import vn.techmasterr.bookstore.dto.NewBook;
+import vn.techmasterr.bookstore.event.LowStock;
 import vn.techmasterr.bookstore.exception.BookException;
 import vn.techmasterr.bookstore.model.Book;
 import vn.techmasterr.bookstore.model.BookInventory;
@@ -18,11 +22,17 @@ import vn.techmasterr.bookstore.repository.BookRepo;
 
 @Service
 public class BookService {
-  @Autowired  private BookRepo bookRepo;
-  @Autowired  private BookInventoryRepo bookInventoryRepo;
+  @Autowired
+  private BookRepo bookRepo;
+  @Autowired
+  private BookInventoryRepo bookInventoryRepo;
+
+  @Autowired
+    ApplicationEventPublisher applicationEventPublisher;
+
 
   /*
-
+  
   */
   public Book CreateNewBook(NewBook newBook) {
     Book book = bookRepo.createNewBook(newBook);
@@ -41,21 +51,42 @@ public class BookService {
     return null;
   }
 
+
   /*
-   * Kiểm tra nếu BookInventory có đủ sách, thì đơn hàng thành công, Nếu
-   * BookInventory không đủ sách thì báo người dùng, sẽ đặt thêm sách, khi nào
-   * sách về thì liên hệ lại
+   * Lấy danh sách Book Inventory thấp số lượng amount bằng 0 hoặc 1
    */
-  public void buyBook(BuyBook buyBook) {
 
+  public BookInventory getLastestBookInventory(String bookId) throws Exception {
+    return bookInventoryRepo.getLastestBookInventory(bookId);
   }
 
+  public List<BookInventory> getLowStockBooks() throws Exception {
+    List<BookInventory> bookInventories = new ArrayList<>();
 
-  /*
-  Lấy danh sách Book Inventory thấp số lượng amount bằng 0 hoặc 1
-  */
-  public List<BookInventory> getLowStockBooks() {
-    return null;
+    for (Book book : bookRepo.getAllBook()) {
+      BookInventory lowStockBooks = bookInventoryRepo.getLowStockBooks(book.getId());
+
+      if ( lowStockBooks!= null) {
+        bookInventories.add(lowStockBooks);
+      }
+    }
+    return bookInventories;
   }
 
+  public void buyBook(BuyBook buyBook) throws Exception {
+    if (bookInventoryRepo.checkExistedId(buyBook.bookId())) {
+        int currAmount = bookInventoryRepo.getLastestBookInventory(buyBook.bookId()).getAmount();
+        if (currAmount > buyBook.amount()) {
+            bookInventoryRepo.updateInventory(buyBook.bookId(), currAmount - buyBook.amount());
+        } else {
+            applicationEventPublisher.publishEvent(new LowStock(this, "low stock", buyBook.bookId(), buyBook.amount()));
+        }
+    }
+}
+
+@EventListener
+public void importBook(LowStock lowStock) throws Exception{
+    int currAmount = bookInventoryRepo.getLastestBookInventory(lowStock.getBookId()).getAmount();
+    bookInventoryRepo.updateInventory(lowStock.getBookId(), currAmount + lowStock.getAmount());
+}
 }

@@ -21,7 +21,7 @@ public class Scheduler {
    * Quét tất cả các bản ghi BookInventory, nếu amount = 1 thì tạo Event LowStock
    */
   @Scheduled(fixedDelay = 1000)
-  public void checkInventory() throws InterruptedException {
+  public void checkInventory() throws Exception {
     List<BookInventory> lowInventoryBook = bookService.getLowStockBooks();
   }
 }

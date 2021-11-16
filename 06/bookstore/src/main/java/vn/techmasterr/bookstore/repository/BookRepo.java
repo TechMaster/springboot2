@@ -31,4 +31,7 @@ public class BookRepo {
   public List<Book> searchByTitle(String keyword) {
     return null;
   }
+  public List<Book> getAllBook() {
+    return books.values().stream().toList();
+  }
 }
