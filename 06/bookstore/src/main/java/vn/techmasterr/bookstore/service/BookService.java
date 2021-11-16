@@ -26,11 +26,7 @@ public class BookService {
   */
   public Book CreateNewBook(NewBook newBook) {
     Book book = bookRepo.createNewBook(newBook);
-    try {
-      bookInventoryRepo.updateInventory(book.getId(), newBook.amount());      
-    } catch (BookException e) {
-      e.printStackTrace();      
-    }
+    bookInventoryRepo.updateInventory(book.getId(), newBook.amount());
     return book;
   }
 

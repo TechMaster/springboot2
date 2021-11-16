@@ -12,10 +12,11 @@ import vn.techmasterr.bookstore.model.BookInventory;
 
 @Repository
 public class BookInventoryRepo {
-  private ConcurrentHashMap<String, List<BookInventory>> bookInventory;
+  private ConcurrentHashMap<String, List<BookInventory>> bookInventories;
   private int currentID;
   public BookInventoryRepo() {
     currentID = 0;
+    bookInventories = new ConcurrentHashMap<>();
   }
 
   public int getNextID() {
@@ -24,11 +25,12 @@ public class BookInventoryRepo {
   }
 
   //Nếu book không tồn tại hãy throws BookException
-  public void updateInventory(String bookId, int amount) throws BookException {
-    var listBookInventory = bookInventory.get(bookId);
-    if (listBookInventory == null) {
-      listBookInventory = new ArrayList<BookInventory>();
+  public void updateInventory(String bookId, int amount) {
+    BookInventory bookInventory = new BookInventory(getNextID(), bookId, amount, LocalDateTime.now());
+    if (bookInventories.containsKey(bookId)){
+      bookInventories.get(bookId).add(bookInventory);
+    } else {
+      bookInventories.put(bookId, List.of(bookInventory));
     }
-    listBookInventory.add(new BookInventory(getNextID(), bookId, amount, LocalDateTime.now()));
   }
 }
