@@ -19,8 +19,9 @@ public class BookRepo {
 
   public Book createNewBook(NewBook newBook) {
     String bookId = GenerateId.generateUniqueId(5);
-    books.put(bookId, new Book(bookId, newBook.title(), newBook.author()));
-    return null;
+    Book book = new Book(bookId, newBook.title(), newBook.author());
+    books.put(bookId, book);
+    return book;
   }
 
   public List<Book> getAllSortByTitle() {

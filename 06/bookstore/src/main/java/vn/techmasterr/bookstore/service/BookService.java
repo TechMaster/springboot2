@@ -18,14 +18,8 @@ import vn.techmasterr.bookstore.repository.BookRepo;
 
 @Service
 public class BookService {
-  @Autowired
-  private BookRepo bookRepo;
-  @Autowired
-  private BookInventoryRepo bookInventoryRepo;
-
-  public BookService() {
-    Create1000Books();
-  }
+  @Autowired  private BookRepo bookRepo;
+  @Autowired  private BookInventoryRepo bookInventoryRepo;
 
   /*
 
@@ -42,7 +36,7 @@ public class BookService {
 
   public void Create1000Books() {
     Faker faker = new Faker();
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < 10; i++) {
       CreateNewBook(new NewBook(faker.book().author(), faker.book().title(), faker.number().numberBetween(0, 100)));
     }
   }
@@ -65,7 +59,7 @@ public class BookService {
   Lấy danh sách Book Inventory thấp số lượng amount bằng 0 hoặc 1
   */
   public List<BookInventory> getLowStockBooks() {
-    
+    return null;
   }
 
 }
