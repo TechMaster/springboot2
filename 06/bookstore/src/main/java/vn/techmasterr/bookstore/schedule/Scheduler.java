@@ -19,8 +19,7 @@ public class Scheduler {
   @Autowired private BookService bookService; 
   
   /*
-   * Quét tất cả các bản ghi BookInventory, nếu amount = 1 thì tạo Event tiến hành
-   * Order thêm 5 quyển nữa
+   * Quét tất cả các bản ghi BookInventory, nếu amount = 1 thì tạo Event LowStock
    */
   @Scheduled(fixedDelay = 1000)
   public void checkInventory() throws InterruptedException {
