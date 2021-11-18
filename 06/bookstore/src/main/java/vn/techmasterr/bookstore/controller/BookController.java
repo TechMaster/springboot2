@@ -36,7 +36,7 @@ public class BookController {
 
       @GetMapping()
       public List<Book> getAllBook(){
-        return bookRepo.getAllBook();
+        return bookService.getAllBook();
       }
   }
 

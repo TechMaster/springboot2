@@ -82,6 +82,12 @@ public class BookService {
             applicationEventPublisher.publishEvent(new LowStock(this, "low stock", buyBook.bookId(), buyBook.amount()));
         }
     }
+
+   
+}
+
+public List<Book> getAllBook(){
+  return bookRepo.getAllBook();
 }
 
 @EventListener
