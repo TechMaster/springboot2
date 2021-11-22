@@ -18,7 +18,7 @@ import vn.techmaster.differentdi.interfaces.USB;
 @DependsOn({"powersupply"})
 @Configuration
 public class Computer {
-  @Autowired private Memory ram;  //Property inject
+  @Autowired private @Qualifier("hynix") Memory ram;  //Property inject
   @Autowired private PowerSupply psu;  //Property inject
   private HardDisk hdd;
   private List<USB> usbDevices;
