@@ -58,6 +58,55 @@ public class BasicStreamTest {
     names.stream().filter(p -> p.contains("Hen")).forEach(System.out::println);
   }
 
+    // Phần này sinh viên tự thực hành theo link
+  // https://stackify.com/streams-guide-java-8/
+  @Test
+  public void takeWhile() {
+    List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 9, 10);
+    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
+    ints.stream().takeWhile(number -> (number > 2)).forEach(System.out::println);
+  }
+
+  @Test
+  public void anyMatch() {
+    List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 9, 10);
+    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
+    Boolean res = ints.stream().anyMatch(p -> p % 5 == 0);
+    if (res) {
+      System.out.println("Tập có chứa ít nhất một số chia hết cho 5");
+    }
+  }
+
+  @Test
+  public void allMatch() {
+    List<Integer> ints = List.of(2, 3, 5, 7, 11, 13, 17);
+    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
+    Boolean res = ints.stream().allMatch(p -> InStreamTest.isPrime(p));
+    if (res) {
+      System.out.println("Tập chứa toàn các số nguyên tố");
+    }
+  }
+
+  @Test
+  public void noneMatch() {
+    List<Integer> ints = List.of(4, 6, 8, 9, 12, 14, 15, 16, 18);
+    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
+    Boolean res = ints.stream().noneMatch(p -> InStreamTest.isPrime(p));
+    if (res) {
+      System.out.println("Tập không chứa bất kỳ số nguyên tố nào");
+    }
+  }
+
+
+  @Test
+  public void dropWhile() {
+    List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 9, 10);
+    // Bỏ qua chừng nào điều kiện number % 2 == 0 còn đúng
+    // 4, 4, 4 đều thoả mãn number % 2 == 0 nên bị bỏ qua drop
+    // Nhưng đến 5 không còn thoả mãn
+    ints.stream().dropWhile(number -> number % 2 == 0).forEach(System.out::println);
+  }
+
   @Test
   public void max() {
     List<String> names = List.of("John", "Adam", "Henry", "Anna", "Henry");
@@ -158,29 +207,13 @@ public class BasicStreamTest {
     System.out.println(result);
   }
 
+ 
+
   @Test
   public void groupingBy() {
     List<String> names = List.of("John", "Adam", "Henry", "Anna", "Henry", "Anna", "Anna", "Ted");
     names.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting())).entrySet()
         .forEach(System.out::println);
-  }
-
-  // Phần này sinh viên tự thực hành theo link
-  // https://stackify.com/streams-guide-java-8/
-  @Test
-  public void takeWhile() {
-    List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 9, 10);
-    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
-    ints.stream().takeWhile(number -> (number > 2)).forEach(System.out::println);
-  }
-
-  @Test
-  public void dropWhile() {
-    List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 9, 10);
-    // Bỏ qua chừng nào điều kiện number % 2 == 0 còn đúng
-    // 4, 4, 4 đều thoả mãn number % 2 == 0 nên bị bỏ qua drop
-    // Nhưng đến 5 không còn thoả mãn
-    ints.stream().dropWhile(number -> number % 2 == 0).forEach(System.out::println);
   }
 
   /*
@@ -241,5 +274,6 @@ public class BasicStreamTest {
 
     collect.forEach(System.out::println);
   }
+ 
 
 }

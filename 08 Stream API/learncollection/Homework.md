@@ -1,6 +1,4 @@
-# Bài tập cuối năm 2020
-
-Hạn nộp 8/1/2021. Sẽ chấm bài tại lớp.
+# Vis
 
 1. Hãy import dữ liệu từ file [person.csv](src/main/resources/static/person.csv)
 

@@ -177,4 +177,35 @@ class PersonRepositoryTest {
 		System.out.println(city_male_female_ratio);
 	}
 
+	@Test
+	public void teeRatioMaleFemale() {
+		List<Person> people = personRepository.getAll();
+		var maleVsFemale = people.stream()
+				.collect(Collectors.teeing(
+					Collectors.filtering(e -> e.getGender().equals("Male"), Collectors.counting()),
+					Collectors.filtering(e -> e.getGender().equals("Female"), Collectors.counting()), 
+					(male, female) -> {
+							HashMap<String, Object> map = new HashMap<>();
+							map.put("male", male);
+							map.put("female", female);
+							return map;
+						}));
+
+		System.out.println(maleVsFemale);
+	}
+
+	@Test
+	public void teeRatioMaleFemalePerCity() {
+		List<Person> people = personRepository.getAll();
+		var maleVsFemalePerCity = people.stream()
+				.collect(Collectors.groupingBy(Person::getCity,
+						Collectors.teeing(
+							Collectors.filtering(e -> e.getGender().equals("Male"), Collectors.counting()),
+							Collectors.filtering(e -> e.getGender().equals("Female"), Collectors.counting()), 
+							(male, female) -> {
+									return (double)male / female;
+								})));
+
+		System.out.println(maleVsFemalePerCity);
+	}
 }

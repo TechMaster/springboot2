@@ -3,6 +3,7 @@ package vn.techmaster.learncollection;
 
 import java.text.DecimalFormat;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -42,8 +43,8 @@ public class CollectorTest {
 
   @Test
   public void averagingDouble() {
-    List<Integer> names = List.of(1, 3, -4, 2, -6, 7, -8, 9);
-    var result = names.stream().collect(Collectors.averagingDouble(num->Math.abs(num)));
+    List<Integer> numbers = List.of(1, 3, -4, 2, -6, 7, -8, 9);
+    var result = numbers.stream().collect(Collectors.averagingDouble(num->Math.abs(num)));
     System.out.println(result);    
   }
 
@@ -128,5 +129,46 @@ public class CollectorTest {
     res.get(true).forEach(System.out::println);
   }
 
+  @Test
+  /*
+  Thông tin thống kê : số phần tử, tổng, min, trung bình, max
+  */
+  public void summarizingInt() {
+    List<Integer> numbers = List.of(1, 3, -4, 2, -6, 7, -8, 9);
+    var result = numbers.stream().collect(Collectors.summarizingInt(p -> p));
+    System.out.println(result);
+  }
 
+  @Test
+  /*
+  https://howtodoinjava.com/java12/collectors-teeing-example/
+  */
+  public void tee() {
+    List<Employee> employees = List.of(
+      new Employee("John", "sales", 1000),
+      new Employee("Anna", "sales", 1200),
+      new Employee("Bob", "tech", 800),
+      new Employee("Rock", "hr", 700),
+      new Employee("Bill", "tech", 200),
+      new Employee("Van", "sales", 300)
+    );
+
+    HashMap<String, Employee> result = employees.stream().collect( 
+                            Collectors.teeing(
+                                    Collectors.maxBy(Comparator.comparing(Employee::getSalary)),
+                                    Collectors.minBy(Comparator.comparing(Employee::getSalary)),
+                                    (e1, e2) -> {
+                                        HashMap<String, Employee> map = new HashMap();
+                                        map.put("MAX", e1.get());
+                                        map.put("MIN", e2.get());
+                                        return map;
+                                    }
+                            ));
+         
+        System.out.println(result);
+  }
+
+  //Homework: hãy tìm tỷ lệ số nhân viên sales / số nhân viên tech
 }
+
+
