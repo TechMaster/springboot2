@@ -6,11 +6,41 @@ Sau đó viết Unit Test để verify.
 Thời gian bắt đầu làm bài: 24/10/2021 6:00PM
 Thời gian nộp bài 25/10/2021 11:00 AM
 
-Cách tính điểm:
+**Cách tính điểm:**
 1. Viết đúng phương thức được 0.5 điểm cho mỗi phương thức.
 2. Viết hàm Unit Test hợp lý được 0.5 điểm.
 3. Nộp muộn sau 11:00 AM nhận 0 điểm, do đó làm được bao nhiêu câu cứ nộp.
 4. Quay cóp 0 điểm. Báo cáo với công ty chủ quản.
+
+**Hướng dẫn**
+
+```
+.
+├── main
+│   ├── java
+│   │   └── vn
+│   │       └── techmaster
+│   │           └── imdb
+│   │               ├── model
+│   │               │   └── Film.java 
+│   │               ├── repository
+│   │               │   ├── FilmRepository.java <-- Lập trình các phương thức ở đây
+│   │               │   └── IFilmRepo.java
+│   │               └── ImdbApplication.java
+│   ├── resources
+│   │   ├── static
+│   │   │   ├── film.json <-- 1000 bản ghi
+│   │   │   └── filmsmall.json <-- 30 bản ghi dễ kiểm tra lại bằng tay
+│   │   ├── templates
+│   │   └── application.properties <-- chuyển đổi giữa film.json và filmsmall.json
+├── test
+│   └── java
+│       └── vn
+│           └── techmaster
+│               └── imdb
+│                   └── FilmRepoTest.java <-- Viết unit test ở đây
+
+```
 
 ```java
 public interface IFilmRepo {
