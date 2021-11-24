@@ -1,22 +1,18 @@
 package vn.techmaster.learncollection;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.boot.test.context.SpringBootTest;
-
-import net.bytebuddy.matcher.CollectionOneToOneMatcher;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 import vn.techmaster.learncollection.model.Person;
 import vn.techmaster.learncollection.repository.PersonRepositoryInterface;
@@ -208,4 +204,6 @@ class PersonRepositoryTest {
 
 		System.out.println(maleVsFemalePerCity);
 	}
+
+	
 }

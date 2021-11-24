@@ -9,8 +9,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.Map.Entry;
-import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
@@ -101,6 +99,8 @@ public class CollectorTest {
         Collectors.filtering(p -> p.getSalary() > 600, Collectors.toList()),
         p -> p.stream().collect(Collectors.groupingBy(Employee::getDept))));
     System.out.println(res);
+
+    
 
     // Hỏi có cách nào dễ hiểu hơn cách này không?
     // Tips: đừng viết những câu lệnh đánh đố, rất khó bảo trì sau này

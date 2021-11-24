@@ -84,7 +84,10 @@ public class PersonRepositoryCSV implements PersonRepositoryInterface {
      * return people.stream().sorted(Comparator.comparing(Person::getCity)).
      * map(Person::getCity).collect(Collectors.toList());
      */
-    return people.stream().map(Person::getCity).sorted().toList();
+    //return people.stream().map(Person::getCity).sorted().toList();
+    var x = people.stream().map(Person::getCity).peek(System.out::println).sorted();
+
+    return x.toList();
   }
 
   @Override

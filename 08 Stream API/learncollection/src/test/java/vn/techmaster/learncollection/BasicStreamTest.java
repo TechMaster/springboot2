@@ -18,16 +18,13 @@ public class BasicStreamTest {
   @Test
   public void differentLoopMethods() {
     List<String> names = List.of("John", "Adam", "Henry", "Anna", "Tí", "Tèo");
-    /*
-     * for (var name: names) { System.out.println(name); }
-     * 
-     * for (int i = 0; i < names.size(); i++) { System.out.println(names.get(i)); }
-     * 
-     * names.forEach(n -> System.out.println(n));
-     */
+    
+    for (var name: names) { System.out.println(name); }
+    for (int i = 0; i < names.size(); i++) { System.out.println(names.get(i)); }
+    names.forEach(n -> System.out.println(n));    
+    names.forEach(System.out::println);
+    names.stream().forEach(System.out::println);
 
-    // names.forEach(System.out::println);
-    // names.stream().forEach(System.out::println);
   }
 
   @Test
@@ -55,7 +52,7 @@ public class BasicStreamTest {
   @Test
   public void filter() {
     List<String> names = List.of("John", "Adam", "Henry", "Anna", "Henry");
-    names.stream().filter(p -> p.contains("Hen")).forEach(System.out::println);
+    names.stream().filter(p -> (p.contains("Hen") && (p.length()>3))).forEach(System.out::println);
   }
 
     // Phần này sinh viên tự thực hành theo link
@@ -64,39 +61,8 @@ public class BasicStreamTest {
   public void takeWhile() {
     List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 9, 10);
     // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
-    ints.stream().takeWhile(number -> (number > 2)).forEach(System.out::println);
+    ints.stream().takeWhile(number -> (number / 4 ==1)).forEach(System.out::println);
   }
-
-  @Test
-  public void anyMatch() {
-    List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 9, 10);
-    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
-    Boolean res = ints.stream().anyMatch(p -> p % 5 == 0);
-    if (res) {
-      System.out.println("Tập có chứa ít nhất một số chia hết cho 5");
-    }
-  }
-
-  @Test
-  public void allMatch() {
-    List<Integer> ints = List.of(2, 3, 5, 7, 11, 13, 17);
-    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
-    Boolean res = ints.stream().allMatch(p -> InStreamTest.isPrime(p));
-    if (res) {
-      System.out.println("Tập chứa toàn các số nguyên tố");
-    }
-  }
-
-  @Test
-  public void noneMatch() {
-    List<Integer> ints = List.of(4, 6, 8, 9, 12, 14, 15, 16, 18);
-    // Tiếp tục lấy phần tử trong stream chừng nào điều kiện (number > 2) còn đúng
-    Boolean res = ints.stream().noneMatch(p -> InStreamTest.isPrime(p));
-    if (res) {
-      System.out.println("Tập không chứa bất kỳ số nguyên tố nào");
-    }
-  }
-
 
   @Test
   public void dropWhile() {
@@ -106,6 +72,34 @@ public class BasicStreamTest {
     // Nhưng đến 5 không còn thoả mãn
     ints.stream().dropWhile(number -> number % 2 == 0).forEach(System.out::println);
   }
+
+  @Test
+  public void anyMatch() {
+    List<Integer> ints = List.of(4, 4, 4, 5, 6, 7, 8, 4, 10);
+    Boolean res = ints.stream().anyMatch(p -> p % 5 == 0);
+    if (res) {
+      System.out.println("Tập có chứa ít nhất một số chia hết cho 5");
+    }
+  }
+
+  @Test
+  public void allMatch() {
+    List<Integer> ints = List.of(2, 3, 5, 7, 11, 13, 17);
+    Boolean res = ints.stream().allMatch(p -> InStreamTest.isPrime(p));
+    if (res) {
+      System.out.println("Tập chứa toàn các số nguyên tố");
+    }
+  }
+
+  @Test
+  public void noneMatch() {
+    List<Integer> ints = List.of(4, 6, 8, 9, 12, 14, 15, 16, 18);
+    Boolean res = ints.stream().noneMatch(p -> InStreamTest.isPrime(p));
+    if (res) {
+      System.out.println("Tập không chứa bất kỳ số nguyên tố nào");
+    }
+  }
+
 
   @Test
   public void max() {
@@ -187,6 +181,7 @@ public class BasicStreamTest {
     System.out.println(longestString);
   }
 
+
   @Data
   @AllArgsConstructor
   class Invoice {
@@ -212,8 +207,10 @@ public class BasicStreamTest {
   @Test
   public void groupingBy() {
     List<String> names = List.of("John", "Adam", "Henry", "Anna", "Henry", "Anna", "Anna", "Ted");
-    names.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting())).entrySet()
-        .forEach(System.out::println);
+    names.stream()
+    .collect(Collectors.groupingBy(t->t, Collectors.counting()))
+    .entrySet()
+    .forEach(System.out::println);
   }
 
   /*
@@ -274,6 +271,31 @@ public class BasicStreamTest {
 
     collect.forEach(System.out::println);
   }
+
+  @Data
+  @AllArgsConstructor
+  class Emp {
+    private String name;
+    private int age;
+    private int salary;
+  }
+  @Test
+	public void sortByAgeThenSalary() {
+		List<Emp> emps = List.of(
+      new Emp("John", 20, 2000),
+      new Emp("Anna", 20, 1900),
+      new Emp("Bill", 21, 2100),
+      new Emp("Geogre", 21, 2300),
+      new Emp("Tom", 18, 1500),
+      new Emp("Bob", 30, 1200),
+      new Emp("Jane", 30, 2600)
+    );
+		emps.stream()
+		.sorted(Comparator.comparing(Emp::getAge)
+    .thenComparing(Comparator.comparing(Emp::getSalary).reversed()))
+		.limit(100)
+		.forEach(System.out::println);
+	}
  
 
 }
