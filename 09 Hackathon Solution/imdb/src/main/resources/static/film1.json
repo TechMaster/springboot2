@@ -1,0 +1,5 @@
+[{"id":1,"title":"ABC","year":2011,"country":"Portugal","rating":6.8,"generes":["sex","series","love"],"cost":3273,"revenue":754},
+  {"id":2,"title":"DEF","year":2002,"country":"Netherlands","rating":4.2,"generes":["sex","fiction","thriller"],"cost":2078,"revenue":838},
+  {"id":3,"title":"MNP","year":1985,"country":"Malta","rating":8.1,"generes":["documentary","adventure","war"],"cost":2072,"revenue":338},
+  {"id":4,"title":"QRS","year":1990,"country":"China","rating":5.9,"generes":["western","thriller","sex"],"cost":2573,"revenue":1073},
+  {"id":5,"title":"ZZZ","year":2011,"country":"Portugal","rating":6.8,"generes":["series","love"],"cost":3273,"revenue":754}]
