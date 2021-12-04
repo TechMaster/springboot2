@@ -1,0 +1,130 @@
+[DEBUG] 2021-04-21 23:05:00.473 [http-nio-8080-exec-1] APIController - After sleep
+[ERROR] 2021-04-21 23:05:00.473 [http-nio-8080-exec-1] APIController - Timeout service
+[DEBUG] 2021-04-21 23:05:01.491 [http-nio-8080-exec-2] APIController - After sleep
+[ERROR] 2021-04-21 23:05:01.491 [http-nio-8080-exec-2] APIController - Timeout service
+[DEBUG] 2021-04-21 23:05:15.447 [http-nio-8080-exec-3] APIController - After sleep
+[ERROR] 2021-04-21 23:05:15.448 [http-nio-8080-exec-3] APIController - Timeout service
+[DEBUG] 2021-04-21 23:05:16.462 [http-nio-8080-exec-4] APIController - After sleep
+[ERROR] 2021-04-21 23:05:16.463 [http-nio-8080-exec-4] APIController - Timeout service
+[INFO ] 2021-04-21 23:05:29.640 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 15141 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-21 23:05:29.641 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-21 23:05:29.642 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-21 23:05:30.024 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.419 seconds (JVM running for 3119.475)
+[DEBUG] 2021-04-21 23:13:53.260 [http-nio-8080-exec-1] APIController - After sleep
+[ERROR] 2021-04-21 23:13:53.272 [http-nio-8080-exec-1] APIController - Timeout service
+[DEBUG] 2021-04-21 23:13:54.288 [http-nio-8080-exec-2] APIController - After sleep
+[ERROR] 2021-04-21 23:13:54.288 [http-nio-8080-exec-2] APIController - Timeout service
+[INFO ] 2021-04-21 23:14:09.815 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 22262 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-21 23:14:09.819 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-21 23:14:09.820 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-21 23:14:13.286 [restartedMain] BookstoreApplication - Started BookstoreApplication in 3.815 seconds (JVM running for 4.658)
+[DEBUG] 2021-04-21 23:14:35.385 [http-nio-8080-exec-1] APIController - After sleep
+[ERROR] 2021-04-21 23:14:35.386 [http-nio-8080-exec-1] APIController - Timeout service
+[DEBUG] 2021-04-21 23:14:36.439 [http-nio-8080-exec-2] APIController - After sleep
+[ERROR] 2021-04-21 23:14:36.439 [http-nio-8080-exec-2] APIController - Timeout service
+[DEBUG] 2021-04-21 23:14:50.568 [http-nio-8080-exec-3] APIController - After sleep
+[ERROR] 2021-04-21 23:14:50.569 [http-nio-8080-exec-3] APIController - Timeout service
+[DEBUG] 2021-04-21 23:14:51.583 [http-nio-8080-exec-4] APIController - After sleep
+[ERROR] 2021-04-21 23:14:51.584 [http-nio-8080-exec-4] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:31.878 [http-nio-8080-exec-7] APIController - After sleep
+[ERROR] 2021-04-21 23:15:31.879 [http-nio-8080-exec-7] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:32.893 [http-nio-8080-exec-8] APIController - After sleep
+[ERROR] 2021-04-21 23:15:32.893 [http-nio-8080-exec-8] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:34.915 [http-nio-8080-exec-9] APIController - After sleep
+[ERROR] 2021-04-21 23:15:34.916 [http-nio-8080-exec-9] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:35.924 [http-nio-8080-exec-10] APIController - After sleep
+[ERROR] 2021-04-21 23:15:35.924 [http-nio-8080-exec-10] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:37.937 [http-nio-8080-exec-1] APIController - After sleep
+[ERROR] 2021-04-21 23:15:37.938 [http-nio-8080-exec-1] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:38.948 [http-nio-8080-exec-2] APIController - After sleep
+[ERROR] 2021-04-21 23:15:38.949 [http-nio-8080-exec-2] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:40.959 [http-nio-8080-exec-3] APIController - After sleep
+[ERROR] 2021-04-21 23:15:40.959 [http-nio-8080-exec-3] APIController - Timeout service
+[DEBUG] 2021-04-21 23:15:41.968 [http-nio-8080-exec-4] APIController - After sleep
+[ERROR] 2021-04-21 23:15:41.968 [http-nio-8080-exec-4] APIController - Timeout service
+[INFO ] 2021-04-21 23:37:12.163 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 22262 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-21 23:37:12.183 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-21 23:37:12.183 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-21 23:37:13.080 [restartedMain] BookstoreApplication - Started BookstoreApplication in 1.154 seconds (JVM running for 1384.428)
+[INFO ] 2021-04-21 23:37:14.814 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 22262 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-21 23:37:14.815 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-21 23:37:14.816 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-21 23:37:15.659 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.909 seconds (JVM running for 1387.007)
+[INFO ] 2021-04-21 23:37:17.769 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 22262 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-21 23:37:17.770 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-21 23:37:17.771 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-21 23:37:18.338 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.615 seconds (JVM running for 1389.685)
+[INFO ] 2021-04-21 23:37:21.065 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 22262 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-21 23:37:21.066 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-21 23:37:21.067 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-21 23:37:21.611 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.595 seconds (JVM running for 1392.958)
+[INFO ] 2021-04-21 23:37:23.754 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 25616 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-21 23:37:23.758 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-21 23:37:23.760 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-21 23:37:27.582 [restartedMain] BookstoreApplication - Started BookstoreApplication in 4.245 seconds (JVM running for 5.175)
+[INFO ] 2021-04-22 08:16:29.285 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:16:29.365 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:16:29.366 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:16:32.978 [restartedMain] BookstoreApplication - Started BookstoreApplication in 4.084 seconds (JVM running for 5.256)
+[INFO ] 2021-04-22 08:40:40.100 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:40:40.109 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:40:40.110 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:40:40.795 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.75 seconds (JVM running for 1453.052)
+[INFO ] 2021-04-22 08:40:45.520 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:40:45.522 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:40:45.522 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:40:46.097 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.628 seconds (JVM running for 1458.354)
+[INFO ] 2021-04-22 08:40:48.817 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:40:48.818 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:40:48.819 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:40:49.328 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.559 seconds (JVM running for 1461.585)
+[INFO ] 2021-04-22 08:40:54.070 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:40:54.072 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:40:54.072 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:40:54.573 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.56 seconds (JVM running for 1466.83)
+[INFO ] 2021-04-22 08:40:57.300 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:40:57.301 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:40:57.301 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:40:57.768 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.51 seconds (JVM running for 1470.025)
+[INFO ] 2021-04-22 08:41:01.486 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:41:01.487 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:41:01.487 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:41:01.936 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.489 seconds (JVM running for 1474.193)
+[INFO ] 2021-04-22 08:41:09.686 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:41:09.688 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:41:09.688 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:41:10.154 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.51 seconds (JVM running for 1482.411)
+[INFO ] 2021-04-22 08:41:13.873 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:41:13.874 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:41:13.875 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:41:14.328 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.497 seconds (JVM running for 1486.585)
+[INFO ] 2021-04-22 08:41:31.140 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:41:31.142 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:41:31.143 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:41:31.607 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.519 seconds (JVM running for 1503.863)
+[INFO ] 2021-04-22 08:41:44.378 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 1424 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:41:44.379 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:41:44.379 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:41:44.811 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.473 seconds (JVM running for 1517.068)
+[INFO ] 2021-04-22 08:43:37.937 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 3218 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:43:37.942 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:43:37.944 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:43:41.288 [restartedMain] BookstoreApplication - Started BookstoreApplication in 3.705 seconds (JVM running for 4.621)
+[INFO ] 2021-04-22 08:43:55.099 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 3218 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:43:55.101 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:43:55.102 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:43:55.830 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.8 seconds (JVM running for 19.163)
+[INFO ] 2021-04-22 08:44:07.615 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 3218 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:44:07.616 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:44:07.617 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:44:08.304 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.745 seconds (JVM running for 31.637)
+[INFO ] 2021-04-22 08:45:23.370 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 16 on Cuong.local with PID 3218 (/Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/08-RestCRUD/02-CRUD-Feign/bookstore)
+[DEBUG] 2021-04-22 08:45:23.371 [restartedMain] BookstoreApplication - Running with Spring Boot v2.4.3, Spring v5.3.4
+[INFO ] 2021-04-22 08:45:23.372 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-22 08:45:23.958 [restartedMain] BookstoreApplication - Started BookstoreApplication in 0.654 seconds (JVM running for 107.291)
+[DEBUG] 2021-04-22 08:45:25.120 [http-nio-8080-exec-1] APIController - After sleep
+[ERROR] 2021-04-22 08:45:25.120 [http-nio-8080-exec-1] APIController - Timeout service
+[INFO ] 2021-12-04 08:27:38.628 [restartedMain] BookstoreApplication - Starting BookstoreApplication using Java 17.0.1 on Cuong.local with PID 1647 (/Volumes/CODE/springboot2/12 Exception Handling/bookstore/target/classes started by techmaster in /Volumes/CODE/springboot2/12 Exception Handling/bookstore)
+[DEBUG] 2021-12-04 08:27:38.632 [restartedMain] BookstoreApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-04 08:27:38.633 [restartedMain] BookstoreApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-04 08:27:42.345 [restartedMain] BookstoreApplication - Started BookstoreApplication in 4.065 seconds (JVM running for 4.947)

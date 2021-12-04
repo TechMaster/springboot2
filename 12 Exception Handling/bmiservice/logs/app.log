@@ -1,0 +1,17 @@
+[INFO ] 2021-12-04 08:46:41.766 [main] BmiserviceApplication - Starting BmiserviceApplication using Java 17.0.1 on Cuong.local with PID 2924 (/Volumes/CODE/springboot2/12 Exception Handling/bmiservice/target/classes started by techmaster in /Volumes/CODE/springboot2/12 Exception Handling/bmiservice)
+[DEBUG] 2021-12-04 08:46:41.781 [main] BmiserviceApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-04 08:46:41.783 [main] BmiserviceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-04 08:46:43.044 [main] BmiserviceApplication - Started BmiserviceApplication in 1.581 seconds (JVM running for 2.691)
+[INFO ] 2021-12-04 08:47:06.244 [http-nio-8080-exec-2] BMIController - Height 1.75 weight 76.0
+[INFO ] 2021-12-04 08:49:54.980 [main] BmiserviceApplication - Starting BmiserviceApplication using Java 17.0.1 on Cuong.local with PID 3129 (/Volumes/CODE/springboot2/12 Exception Handling/bmiservice/target/classes started by techmaster in /Volumes/CODE/springboot2/12 Exception Handling/bmiservice)
+[DEBUG] 2021-12-04 08:49:54.991 [main] BmiserviceApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-04 08:49:54.992 [main] BmiserviceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-04 08:49:56.182 [main] BmiserviceApplication - Started BmiserviceApplication in 1.494 seconds (JVM running for 2.442)
+[INFO ] 2021-12-04 08:50:02.197 [http-nio-8080-exec-1] BMIController - Height 1.75 weight 76.0
+[INFO ] 2021-12-04 08:50:02.771 [http-nio-8080-exec-3] BMIController - Height 1.75 weight 76.0
+[ERROR] 2021-12-04 08:50:05.830 [http-nio-8080-exec-5] BMIController - Invalid height = %s, weight = %s
+[INFO ] 2021-12-04 08:52:16.480 [main] BmiserviceApplication - Starting BmiserviceApplication using Java 17.0.1 on Cuong.local with PID 3268 (/Volumes/CODE/springboot2/12 Exception Handling/bmiservice/target/classes started by techmaster in /Volumes/CODE/springboot2/12 Exception Handling/bmiservice)
+[DEBUG] 2021-12-04 08:52:16.491 [main] BmiserviceApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-04 08:52:16.493 [main] BmiserviceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-04 08:52:17.672 [main] BmiserviceApplication - Started BmiserviceApplication in 1.488 seconds (JVM running for 2.53)
+[ERROR] 2021-12-04 08:52:23.043 [http-nio-8080-exec-1] BMIController - Invalid height = 1.75, weight = 76a

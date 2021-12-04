@@ -1,0 +1,9 @@
+[INFO ] 2021-04-21 23:15:24.786 [main] FeignTest - Retry attempt 0
+[INFO ] 2021-04-21 23:15:25.008 [main] FeignTest - Call slow API success with 6 records returned
+[INFO ] 2021-04-21 23:15:30.842 [main] FeignTest - Retry attempt 0
+[INFO ] 2021-04-21 23:15:33.907 [main] FeignTest - Retry attempt 1
+[INFO ] 2021-04-21 23:15:36.930 [main] FeignTest - Retry attempt 2
+[INFO ] 2021-04-21 23:15:39.954 [main] FeignTest - Retry attempt 3
+[ERROR] 2021-04-21 23:15:41.974 [main] FeignTest - Failed to execute after 4
+[INFO ] 2021-04-22 08:45:23.879 [main] FeignTest - Retry attempt 0
+[INFO ] 2021-04-22 08:45:25.218 [main] FeignTest - Call slow API success with 6 records returned

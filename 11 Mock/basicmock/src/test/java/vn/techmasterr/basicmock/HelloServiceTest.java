@@ -64,14 +64,18 @@ public class HelloServiceTest {
 
   @Test
   void testDoAnswer() {
-    doReturn("BII").when(helloRepo).hi();
+    //doReturn("BII").when(helloRepo).hi();
 
-    doAnswer(i -> {
+    /*doAnswer(i -> {
       return "BOO";
-    }).when(helloRepo).hi();
+    }).when(helloRepo).hi();*/
 
 
-    when(helloRepo.hi()).thenReturn("BAA");
+    //when(helloRepo.hi()).thenReturn("BAA");
+
+    when(helloRepo.hi()).thenAnswer(i -> {
+      return "Beee";
+    });
     System.out.println(helloRepo.hi());
   }
 

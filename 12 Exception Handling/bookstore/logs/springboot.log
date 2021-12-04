@@ -1,0 +1,909 @@
+[INFO ] 2021-04-21 23:04:59.466 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-21 23:04:59.466 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-21 23:04:59.466 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-21 23:04:59.466 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-21 23:04:59.467 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3b296b08
+[DEBUG] 2021-04-21 23:04:59.467 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@34b656be
+[DEBUG] 2021-04-21 23:04:59.467 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-21 23:04:59.467 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[DEBUG] 2021-04-21 23:04:59.468 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:04:59.468 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:05:00.475 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:05:00.478 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:05:00.478 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@1f5a0efa]
+[WARN ] 2021-04-21 23:05:00.480 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:05:00.480 [http-nio-8080-exec-1] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:05:00.488 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:05:00.488 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:05:01.492 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:05:01.493 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:05:01.493 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@70dd1eae]
+[WARN ] 2021-04-21 23:05:01.494 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:05:01.495 [http-nio-8080-exec-2] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:05:14.439 [http-nio-8080-exec-3] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:05:14.441 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:05:15.449 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:05:15.450 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:05:15.452 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@57102033]
+[WARN ] 2021-04-21 23:05:15.453 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:05:15.453 [http-nio-8080-exec-3] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:05:15.461 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:05:15.462 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:05:16.463 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:05:16.464 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:05:16.464 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@34a1ea9d]
+[WARN ] 2021-04-21 23:05:16.465 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:05:16.466 [http-nio-8080-exec-4] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:05:29.979 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:05:29.985 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-21 23:05:29.993 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-21 23:05:29.997 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-21 23:13:52.242 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-21 23:13:52.253 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-21 23:13:52.253 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-21 23:13:52.253 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-21 23:13:52.254 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7b5f0e4b
+[DEBUG] 2021-04-21 23:13:52.254 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4ef70462
+[DEBUG] 2021-04-21 23:13:52.255 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-21 23:13:52.255 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-21 23:13:52.255 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:13:52.256 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:13:53.273 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:13:53.276 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:13:53.277 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@2b45adae]
+[WARN ] 2021-04-21 23:13:53.278 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:13:53.278 [http-nio-8080-exec-1] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:13:53.286 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:13:53.287 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:13:54.289 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:13:54.289 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:13:54.289 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@7b277c51]
+[WARN ] 2021-04-21 23:13:54.290 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:13:54.291 [http-nio-8080-exec-2] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:14:12.992 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:14:13.058 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-21 23:14:13.097 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-21 23:14:13.110 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-21 23:14:34.357 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-21 23:14:34.358 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-21 23:14:34.358 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-21 23:14:34.358 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-21 23:14:34.359 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@790848f4
+[DEBUG] 2021-04-21 23:14:34.360 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5b63df74
+[DEBUG] 2021-04-21 23:14:34.360 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-21 23:14:34.360 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-21 23:14:34.367 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:14:34.371 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:14:35.389 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:14:35.416 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:14:35.416 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@1800b24d]
+[WARN ] 2021-04-21 23:14:35.429 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:14:35.430 [http-nio-8080-exec-1] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:14:35.437 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:14:35.438 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:14:36.440 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:14:36.441 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:14:36.441 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@3cd0ef20]
+[WARN ] 2021-04-21 23:14:36.442 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:14:36.443 [http-nio-8080-exec-2] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:14:49.566 [http-nio-8080-exec-3] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:14:49.566 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:14:50.569 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:14:50.570 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:14:50.571 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@575b0d68]
+[WARN ] 2021-04-21 23:14:50.572 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:14:50.572 [http-nio-8080-exec-3] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:14:50.580 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:14:50.580 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:14:51.585 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:14:51.585 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:14:51.586 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@74ae7c67]
+[WARN ] 2021-04-21 23:14:51.587 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:14:51.587 [http-nio-8080-exec-4] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:24.822 [http-nio-8080-exec-5] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:24.823 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:24.943 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:24.943 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-21 23:15:24.951 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-21 23:15:30.877 [http-nio-8080-exec-7] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:30.878 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:31.880 [http-nio-8080-exec-7] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:31.881 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:31.881 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@64640b17]
+[WARN ] 2021-04-21 23:15:31.882 [http-nio-8080-exec-7] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:31.882 [http-nio-8080-exec-7] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:31.891 [http-nio-8080-exec-8] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:31.891 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:32.894 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:32.895 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:32.896 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@5b3aeb02]
+[WARN ] 2021-04-21 23:15:32.897 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:32.897 [http-nio-8080-exec-8] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:33.910 [http-nio-8080-exec-9] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:33.911 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:34.916 [http-nio-8080-exec-9] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:34.917 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:34.917 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@5848e893]
+[WARN ] 2021-04-21 23:15:34.918 [http-nio-8080-exec-9] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:34.918 [http-nio-8080-exec-9] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:34.920 [http-nio-8080-exec-10] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:34.921 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:35.925 [http-nio-8080-exec-10] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:35.926 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:35.927 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@9152157]
+[WARN ] 2021-04-21 23:15:35.928 [http-nio-8080-exec-10] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:35.928 [http-nio-8080-exec-10] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:36.933 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:36.934 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:37.939 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:37.940 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:37.941 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@1747ea7a]
+[WARN ] 2021-04-21 23:15:37.942 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:37.943 [http-nio-8080-exec-1] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:37.945 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:37.945 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:38.950 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:38.951 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:38.951 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@321716ca]
+[WARN ] 2021-04-21 23:15:38.953 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:38.953 [http-nio-8080-exec-2] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:39.957 [http-nio-8080-exec-3] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:39.957 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:40.960 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:40.960 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:40.961 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@18a1e3c8]
+[WARN ] 2021-04-21 23:15:40.962 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:40.962 [http-nio-8080-exec-3] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:15:40.964 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-21 23:15:40.964 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-21 23:15:41.969 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:15:41.970 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:15:41.971 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@3b5496b9]
+[WARN ] 2021-04-21 23:15:41.972 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-21 23:15:41.974 [http-nio-8080-exec-4] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-21 23:37:12.976 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:13.012 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-21 23:37:13.028 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-21 23:37:13.035 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:15.591 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:15.599 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-21 23:37:15.612 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-21 23:37:15.618 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:18.264 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:18.271 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-21 23:37:18.283 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-21 23:37:18.288 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:21.546 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:21.554 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-21 23:37:21.566 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-21 23:37:21.573 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:27.272 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-21 23:37:27.348 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-21 23:37:27.388 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-21 23:37:27.412 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-21 23:37:33.685 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-21 23:37:33.685 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-21 23:37:33.685 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-21 23:37:33.686 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-21 23:37:33.687 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d2d1881
+[DEBUG] 2021-04-21 23:37:33.687 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@51cba57e
+[DEBUG] 2021-04-21 23:37:33.687 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-21 23:37:33.687 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-21 23:37:33.695 [http-nio-8080-exec-1] DispatcherServlet - PUT "/api/books/3/", parameters={}
+[DEBUG] 2021-04-21 23:37:33.698 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#updateBook(BookPOJO, long)
+[DEBUG] 2021-04-21 23:37:33.753 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=A Summer Bird-Cage, author=Mr. Trent Miller)]
+[DEBUG] 2021-04-21 23:37:33.849 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:37:33.850 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=3, title=A Summer Bird-Cage, author=Mr. Trent Miller)]
+[DEBUG] 2021-04-21 23:37:33.864 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-21 23:37:39.574 [http-nio-8080-exec-3] DispatcherServlet - PUT "/api/books/100/", parameters={}
+[DEBUG] 2021-04-21 23:37:39.575 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#updateBook(BookPOJO, long)
+[DEBUG] 2021-04-21 23:37:39.576 [http-nio-8080-exec-3] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Painted Veil, author=Valrie Bartell)]
+[DEBUG] 2021-04-21 23:37:39.580 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-21 23:37:39.584 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-21 23:37:39.584 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@4c8013d1]
+[WARN ] 2021-04-21 23:37:39.587 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Cannot update a book]
+[DEBUG] 2021-04-21 23:37:39.588 [http-nio-8080-exec-3] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-22 08:16:32.629 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:16:32.786 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:16:32.818 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:16:32.829 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:16:50.725 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:16:50.726 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:16:50.726 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:16:50.727 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:16:50.728 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@afe3704
+[DEBUG] 2021-04-22 08:16:50.729 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3e697a77
+[DEBUG] 2021-04-22 08:16:50.729 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:16:50.729 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-22 08:16:50.741 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:16:50.747 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:16:50.943 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:16:50.945 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:16:50.987 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:16:51.108 [http-nio-8080-exec-2] DispatcherServlet - GET "/favicon.ico", parameters={}
+[DEBUG] 2021-04-22 08:16:51.112 [http-nio-8080-exec-2] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]]
+[DEBUG] 2021-04-22 08:16:51.115 [http-nio-8080-exec-2] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-22 08:16:51.115 [http-nio-8080-exec-2] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-22 08:16:51.119 [http-nio-8080-exec-2] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-04-22 08:16:51.121 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-22 08:16:51.130 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:16:51.134 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [{timestamp=Thu Apr 22 08:16:51 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-22 08:16:51.163 [http-nio-8080-exec-2] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-22 08:18:03.878 [http-nio-8080-exec-6] DispatcherServlet - POST "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:18:03.879 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:18:03.918 [http-nio-8080-exec-6] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Đời ngắn, đừng ngủ dài, author=Robin Shama)]
+[DEBUG] 2021-04-22 08:18:04.001 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:18:04.002 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [Book(id=7, title=Đời ngắn, đừng ngủ dài, author=Robin Shama)]
+[DEBUG] 2021-04-22 08:18:04.003 [http-nio-8080-exec-6] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:18:09.145 [http-nio-8080-exec-7] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:18:09.147 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:18:09.151 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:18:09.152 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:18:09.153 [http-nio-8080-exec-7] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:35:51.153 [http-nio-8080-exec-10] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:35:51.452 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:35:51.468 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:35:51.469 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:35:51.473 [http-nio-8080-exec-10] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:36:15.111 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/5", parameters={}
+[DEBUG] 2021-04-22 08:36:15.126 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findBookById(long)
+[DEBUG] 2021-04-22 08:36:15.190 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:36:15.191 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=5, title=Tobacco Road, author=Erskine Caldwell)]
+[DEBUG] 2021-04-22 08:36:15.196 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:36:26.500 [http-nio-8080-exec-2] DispatcherServlet - PUT "/api/books/5", parameters={}
+[DEBUG] 2021-04-22 08:36:26.504 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#updateBook(BookPOJO, long)
+[DEBUG] 2021-04-22 08:36:26.512 [http-nio-8080-exec-2] HandlerMethod - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<vn.techmaster.bookstore.model.Book> vn.techmaster.bookstore.controller.APIController.updateBook(vn.techmaster.bookstore.model.BookPOJO,long): Content type 'text/plain;charset=UTF-8' not supported
+[DEBUG] 2021-04-22 08:36:26.529 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-22 08:36:26.530 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/octet-stream', given [*/*] and supported [*/*]
+[WARN ] 2021-04-22 08:36:26.532 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+[DEBUG] 2021-04-22 08:36:26.533 [http-nio-8080-exec-2] DispatcherServlet - Completed 415 UNSUPPORTED_MEDIA_TYPE
+[DEBUG] 2021-04-22 08:36:35.462 [http-nio-8080-exec-3] DispatcherServlet - PUT "/api/books/5", parameters={}
+[DEBUG] 2021-04-22 08:36:35.464 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#updateBook(BookPOJO, long)
+[DEBUG] 2021-04-22 08:36:35.467 [http-nio-8080-exec-3] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Sông Đông Êm Đềm, author=Solokhop)]
+[DEBUG] 2021-04-22 08:36:35.506 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:36:35.506 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Book(id=5, title=Sông Đông Êm Đềm, author=Solokhop)]
+[DEBUG] 2021-04-22 08:36:35.508 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:36:47.350 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books/5", parameters={}
+[DEBUG] 2021-04-22 08:36:47.351 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findBookById(long)
+[DEBUG] 2021-04-22 08:36:47.353 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:36:47.355 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [Book(id=5, title=Sông Đông Êm Đềm, author=Solokhop)]
+[DEBUG] 2021-04-22 08:36:47.357 [http-nio-8080-exec-4] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:37:10.933 [http-nio-8080-exec-5] DispatcherServlet - PUT "/api/books/5", parameters={}
+[DEBUG] 2021-04-22 08:37:10.934 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#updateBook(BookPOJO, long)
+[DEBUG] 2021-04-22 08:37:10.935 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Sông Đông Êm Đềm, author=Sholokhop)]
+[DEBUG] 2021-04-22 08:37:10.940 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:37:10.942 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [Book(id=5, title=Sông Đông Êm Đềm, author=Sholokhop)]
+[DEBUG] 2021-04-22 08:37:10.944 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:37:44.224 [http-nio-8080-exec-6] DispatcherServlet - DELETE "/api/books/5", parameters={}
+[DEBUG] 2021-04-22 08:37:44.226 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#deleteBookById(long)
+[DEBUG] 2021-04-22 08:37:44.249 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:37:44.249 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [5]
+[DEBUG] 2021-04-22 08:37:44.250 [http-nio-8080-exec-6] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:37:49.602 [http-nio-8080-exec-7] DispatcherServlet - GET "/api/books/5", parameters={}
+[DEBUG] 2021-04-22 08:37:49.603 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findBookById(long)
+[DEBUG] 2021-04-22 08:37:49.618 [http-nio-8080-exec-7] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-22 08:37:49.625 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:37:49.627 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@39b7375]
+[WARN ] 2021-04-22 08:37:49.635 [http-nio-8080-exec-7] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Cannot find a book]
+[DEBUG] 2021-04-22 08:37:49.636 [http-nio-8080-exec-7] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-22 08:40:40.703 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:40:40.717 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:40:40.735 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:40:40.743 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:40:40.848 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:40:40.848 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:40:40.848 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:40:40.849 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:40:40.850 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5520309a
+[DEBUG] 2021-04-22 08:40:40.850 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@548cb20c
+[DEBUG] 2021-04-22 08:40:40.851 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:40:40.851 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-22 08:40:40.852 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:40:40.853 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:40:40.861 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:40:40.862 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:40:40.865 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:40:46.025 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:40:46.035 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:40:46.051 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:40:46.057 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:40:46.209 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:40:46.209 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:40:46.209 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:40:46.210 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:40:46.210 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1403ec94
+[DEBUG] 2021-04-22 08:40:46.211 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@61c1d224
+[DEBUG] 2021-04-22 08:40:46.211 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:40:46.211 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-22 08:40:46.212 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/1", parameters={}
+[DEBUG] 2021-04-22 08:40:46.212 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findBookById(long)
+[DEBUG] 2021-04-22 08:40:46.219 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:40:46.219 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=1, title=Ulysses, author=James Joyce)]
+[DEBUG] 2021-04-22 08:40:46.221 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:40:49.264 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:40:49.271 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:40:49.283 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:40:49.288 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:40:50.139 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:40:50.139 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:40:50.139 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:40:50.139 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:40:50.140 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5302768d
+[DEBUG] 2021-04-22 08:40:50.141 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6271131e
+[DEBUG] 2021-04-22 08:40:50.141 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:40:50.141 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-22 08:40:50.142 [http-nio-8080-exec-1] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:40:50.142 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:40:50.145 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Lilies of the Field, author=Jeannie Langosh)]
+[DEBUG] 2021-04-22 08:40:50.159 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:40:50.159 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=7, title=Lilies of the Field, author=Jeannie Langosh)]
+[DEBUG] 2021-04-22 08:40:50.160 [http-nio-8080-exec-1] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:40:54.519 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:40:54.525 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:40:54.535 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:40:54.540 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:40:54.785 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:40:54.785 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:40:54.785 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:40:54.785 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:40:54.786 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@215c910d
+[DEBUG] 2021-04-22 08:40:54.787 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@77ecfa8b
+[DEBUG] 2021-04-22 08:40:54.787 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:40:54.787 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-22 08:40:54.788 [http-nio-8080-exec-1] DispatcherServlet - PUT "/api/books/3/", parameters={}
+[DEBUG] 2021-04-22 08:40:54.788 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#updateBook(BookPOJO, long)
+[DEBUG] 2021-04-22 08:40:54.793 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Other Side of Silence, author=Larissa Reichel)]
+[DEBUG] 2021-04-22 08:40:54.805 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:40:54.805 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=3, title=The Other Side of Silence, author=Larissa Reichel)]
+[DEBUG] 2021-04-22 08:40:54.806 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:40:57.712 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:40:57.720 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:40:57.735 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:40:57.739 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:40:58.412 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:40:58.412 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:40:58.413 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:40:58.413 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:40:58.413 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@35de94
+[DEBUG] 2021-04-22 08:40:58.414 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@25594042
+[DEBUG] 2021-04-22 08:40:58.414 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:40:58.414 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-22 08:40:58.415 [http-nio-8080-exec-1] DispatcherServlet - DELETE "/api/books/4/", parameters={}
+[DEBUG] 2021-04-22 08:40:58.415 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#deleteBookById(long)
+[DEBUG] 2021-04-22 08:40:58.423 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:40:58.424 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [4]
+[DEBUG] 2021-04-22 08:40:58.425 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:01.880 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:41:01.888 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:41:01.898 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:41:01.906 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:41:02.203 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:41:02.203 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:41:02.203 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:41:02.203 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:41:02.204 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a27bce1
+[DEBUG] 2021-04-22 08:41:02.204 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@36e6041e
+[DEBUG] 2021-04-22 08:41:02.205 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:41:02.205 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-22 08:41:02.205 [http-nio-8080-exec-1] DispatcherServlet - DELETE "/api/books/100/", parameters={}
+[DEBUG] 2021-04-22 08:41:02.206 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#deleteBookById(long)
+[DEBUG] 2021-04-22 08:41:02.211 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-22 08:41:02.214 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:02.215 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@1c2f4103]
+[WARN ] 2021-04-22 08:41:02.216 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Cannot delete a book]
+[DEBUG] 2021-04-22 08:41:02.216 [http-nio-8080-exec-1] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-22 08:41:10.097 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:41:10.107 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:41:10.117 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:41:10.122 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:41:10.958 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:41:10.959 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:41:10.959 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:41:10.959 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:41:10.960 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@732377f2
+[DEBUG] 2021-04-22 08:41:10.961 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ea95ba
+[DEBUG] 2021-04-22 08:41:10.961 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:41:10.962 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-04-22 08:41:10.962 [http-nio-8080-exec-1] DispatcherServlet - PUT "/api/books/100/", parameters={}
+[DEBUG] 2021-04-22 08:41:10.963 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#updateBook(BookPOJO, long)
+[DEBUG] 2021-04-22 08:41:10.968 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Jesting Pilate, author=Joni Zulauf)]
+[DEBUG] 2021-04-22 08:41:10.975 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-22 08:41:10.978 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:10.979 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@12f7e3d6]
+[WARN ] 2021-04-22 08:41:10.981 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Cannot update a book]
+[DEBUG] 2021-04-22 08:41:10.982 [http-nio-8080-exec-1] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-22 08:41:14.275 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:41:14.282 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:41:14.292 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:41:14.296 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:41:14.927 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:41:14.928 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:41:14.928 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:41:14.928 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:41:14.929 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@770990bc
+[DEBUG] 2021-04-22 08:41:14.929 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@464b24a6
+[DEBUG] 2021-04-22 08:41:14.929 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:41:14.930 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-22 08:41:14.930 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:14.931 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:14.940 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:14.941 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:14.943 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:15.084 [http-nio-8080-exec-2] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.085 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.087 [http-nio-8080-exec-2] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Rosemary Sutcliff, author=Ulysses Weissnat)]
+[DEBUG] 2021-04-22 08:41:15.095 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.095 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [Book(id=7, title=Rosemary Sutcliff, author=Ulysses Weissnat)]
+[DEBUG] 2021-04-22 08:41:15.096 [http-nio-8080-exec-2] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.101 [http-nio-8080-exec-3] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.101 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.102 [http-nio-8080-exec-3] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Everything is Illuminated, author=Sylvester Schiller)]
+[DEBUG] 2021-04-22 08:41:15.104 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.104 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Book(id=8, title=Everything is Illuminated, author=Sylvester Schiller)]
+[DEBUG] 2021-04-22 08:41:15.105 [http-nio-8080-exec-3] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.110 [http-nio-8080-exec-4] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.110 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.111 [http-nio-8080-exec-4] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=To Sail Beyond the Sunset, author=Diego Crooks)]
+[DEBUG] 2021-04-22 08:41:15.113 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.113 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [Book(id=9, title=To Sail Beyond the Sunset, author=Diego Crooks)]
+[DEBUG] 2021-04-22 08:41:15.114 [http-nio-8080-exec-4] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.119 [http-nio-8080-exec-5] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.120 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.120 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Look to Windward, author=Marnie Witting MD)]
+[DEBUG] 2021-04-22 08:41:15.123 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.123 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [Book(id=10, title=Look to Windward, author=Marnie Witting MD)]
+[DEBUG] 2021-04-22 08:41:15.124 [http-nio-8080-exec-5] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.129 [http-nio-8080-exec-6] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.129 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.130 [http-nio-8080-exec-6] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=An Evil Cradling, author=Brandon Olson)]
+[DEBUG] 2021-04-22 08:41:15.132 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.133 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [Book(id=11, title=An Evil Cradling, author=Brandon Olson)]
+[DEBUG] 2021-04-22 08:41:15.134 [http-nio-8080-exec-6] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.144 [http-nio-8080-exec-7] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.145 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.146 [http-nio-8080-exec-7] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=In Dubious Battle, author=America Morissette)]
+[DEBUG] 2021-04-22 08:41:15.149 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.149 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [Book(id=12, title=In Dubious Battle, author=America Morissette)]
+[DEBUG] 2021-04-22 08:41:15.150 [http-nio-8080-exec-7] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.159 [http-nio-8080-exec-8] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.159 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.160 [http-nio-8080-exec-8] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=All Passion Spent, author=Israel Kessler)]
+[DEBUG] 2021-04-22 08:41:15.163 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.163 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [Book(id=13, title=All Passion Spent, author=Israel Kessler)]
+[DEBUG] 2021-04-22 08:41:15.164 [http-nio-8080-exec-8] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.172 [http-nio-8080-exec-9] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.172 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.173 [http-nio-8080-exec-9] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Way of All Flesh, author=Colby Weissnat DVM)]
+[DEBUG] 2021-04-22 08:41:15.175 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.176 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [Book(id=14, title=The Way of All Flesh, author=Colby Weissnat DVM)]
+[DEBUG] 2021-04-22 08:41:15.178 [http-nio-8080-exec-9] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.183 [http-nio-8080-exec-10] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.184 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.185 [http-nio-8080-exec-10] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=O Pioneers!, author=Mr. Eric Morar)]
+[DEBUG] 2021-04-22 08:41:15.188 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.188 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [Book(id=15, title=O Pioneers!, author=Mr. Eric Morar)]
+[DEBUG] 2021-04-22 08:41:15.190 [http-nio-8080-exec-10] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.195 [http-nio-8080-exec-1] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.195 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:15.196 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Noli Me Tangere, author=Andree Russel)]
+[DEBUG] 2021-04-22 08:41:15.198 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.198 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=16, title=Noli Me Tangere, author=Andree Russel)]
+[DEBUG] 2021-04-22 08:41:15.199 [http-nio-8080-exec-1] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:15.202 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:15.202 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:15.205 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:15.206 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:15.207 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:21.645 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:41:21.646 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:21.650 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:21.650 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:21.652 [http-nio-8080-exec-4] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:31.555 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:41:31.561 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:41:31.570 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:41:31.574 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:41:31.998 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:41:31.998 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:41:31.998 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:41:31.999 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:41:31.999 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6462f813
+[DEBUG] 2021-04-22 08:41:32.000 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1e4cc904
+[DEBUG] 2021-04-22 08:41:32.000 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:41:32.001 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-22 08:41:32.001 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.002 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:32.009 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.009 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:32.011 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:32.157 [http-nio-8080-exec-2] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.157 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.159 [http-nio-8080-exec-2] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Time of our Darkness, author=Antony Hagenes)]
+[DEBUG] 2021-04-22 08:41:32.168 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.169 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [Book(id=7, title=Time of our Darkness, author=Antony Hagenes)]
+[DEBUG] 2021-04-22 08:41:32.170 [http-nio-8080-exec-2] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.174 [http-nio-8080-exec-3] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.174 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.175 [http-nio-8080-exec-3] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Bury My Heart at Wounded Knee, author=Gale Mann)]
+[DEBUG] 2021-04-22 08:41:32.177 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.177 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Book(id=8, title=Bury My Heart at Wounded Knee, author=Gale Mann)]
+[DEBUG] 2021-04-22 08:41:32.178 [http-nio-8080-exec-3] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.183 [http-nio-8080-exec-4] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.184 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.184 [http-nio-8080-exec-4] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=East of Eden, author=Sonny Yundt)]
+[DEBUG] 2021-04-22 08:41:32.186 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.187 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [Book(id=9, title=East of Eden, author=Sonny Yundt)]
+[DEBUG] 2021-04-22 08:41:32.188 [http-nio-8080-exec-4] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.192 [http-nio-8080-exec-5] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.193 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.194 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Many Waters, author=Kirby Hamill)]
+[DEBUG] 2021-04-22 08:41:32.195 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.196 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [Book(id=10, title=Many Waters, author=Kirby Hamill)]
+[DEBUG] 2021-04-22 08:41:32.197 [http-nio-8080-exec-5] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.202 [http-nio-8080-exec-6] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.202 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.203 [http-nio-8080-exec-6] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Clouds of Witness, author=Rhett Kunze IV)]
+[DEBUG] 2021-04-22 08:41:32.205 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.205 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [Book(id=11, title=Clouds of Witness, author=Rhett Kunze IV)]
+[DEBUG] 2021-04-22 08:41:32.206 [http-nio-8080-exec-6] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.210 [http-nio-8080-exec-7] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.210 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.211 [http-nio-8080-exec-7] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=A Passage to India, author=Tristan Harvey)]
+[DEBUG] 2021-04-22 08:41:32.213 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.213 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [Book(id=12, title=A Passage to India, author=Tristan Harvey)]
+[DEBUG] 2021-04-22 08:41:32.215 [http-nio-8080-exec-7] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.220 [http-nio-8080-exec-8] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.220 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.221 [http-nio-8080-exec-8] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Brandy of the Damned, author=Ms. Jackeline Little)]
+[DEBUG] 2021-04-22 08:41:32.222 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.222 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [Book(id=13, title=Brandy of the Damned, author=Ms. Jackeline Little)]
+[DEBUG] 2021-04-22 08:41:32.223 [http-nio-8080-exec-8] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.227 [http-nio-8080-exec-9] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.228 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.229 [http-nio-8080-exec-9] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Millstone, author=Andres Bechtelar)]
+[DEBUG] 2021-04-22 08:41:32.231 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.231 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [Book(id=14, title=The Millstone, author=Andres Bechtelar)]
+[DEBUG] 2021-04-22 08:41:32.232 [http-nio-8080-exec-9] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.236 [http-nio-8080-exec-10] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.236 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.237 [http-nio-8080-exec-10] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Postern of Fate, author=Leonel Pagac)]
+[DEBUG] 2021-04-22 08:41:32.239 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.239 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [Book(id=15, title=Postern of Fate, author=Leonel Pagac)]
+[DEBUG] 2021-04-22 08:41:32.240 [http-nio-8080-exec-10] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.243 [http-nio-8080-exec-1] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.244 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:32.244 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Dulce et Decorum Est, author=Dr. Morton Skiles)]
+[DEBUG] 2021-04-22 08:41:32.246 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.246 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=16, title=Dulce et Decorum Est, author=Dr. Morton Skiles)]
+[DEBUG] 2021-04-22 08:41:32.248 [http-nio-8080-exec-1] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:32.250 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:32.251 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:32.253 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:32.254 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:32.255 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:34.396 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:41:34.396 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:34.400 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:34.400 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:34.402 [http-nio-8080-exec-4] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:44.762 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:41:44.768 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:41:44.778 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:41:44.782 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:41:44.850 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:41:44.850 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:41:44.850 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:41:44.850 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:41:44.851 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@662995af
+[DEBUG] 2021-04-22 08:41:44.851 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@582ecaea
+[DEBUG] 2021-04-22 08:41:44.851 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:41:44.851 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[DEBUG] 2021-04-22 08:41:44.852 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:44.852 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:44.857 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:44.858 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:44.860 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:45.000 [http-nio-8080-exec-2] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.000 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.002 [http-nio-8080-exec-2] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=O Jerusalem!, author=Elizbeth Gleichner)]
+[DEBUG] 2021-04-22 08:41:45.009 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.009 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [Book(id=7, title=O Jerusalem!, author=Elizbeth Gleichner)]
+[DEBUG] 2021-04-22 08:41:45.010 [http-nio-8080-exec-2] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.015 [http-nio-8080-exec-3] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.015 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.016 [http-nio-8080-exec-3] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Many Waters, author=Sindy Schimmel)]
+[DEBUG] 2021-04-22 08:41:45.018 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.018 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Book(id=8, title=Many Waters, author=Sindy Schimmel)]
+[DEBUG] 2021-04-22 08:41:45.019 [http-nio-8080-exec-3] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.023 [http-nio-8080-exec-4] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.024 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.024 [http-nio-8080-exec-4] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Wind's Twelve Quarters, author=Alvera Fritsch)]
+[DEBUG] 2021-04-22 08:41:45.026 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.027 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [Book(id=9, title=The Wind's Twelve Quarters, author=Alvera Fritsch)]
+[DEBUG] 2021-04-22 08:41:45.027 [http-nio-8080-exec-4] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.031 [http-nio-8080-exec-5] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.032 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.033 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Proper Study, author=Bernard Cremin)]
+[DEBUG] 2021-04-22 08:41:45.035 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.035 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [Book(id=10, title=The Proper Study, author=Bernard Cremin)]
+[DEBUG] 2021-04-22 08:41:45.036 [http-nio-8080-exec-5] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.040 [http-nio-8080-exec-6] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.041 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.041 [http-nio-8080-exec-6] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Beneath the Bleeding, author=Sanjuanita Will PhD)]
+[DEBUG] 2021-04-22 08:41:45.043 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.044 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [Book(id=11, title=Beneath the Bleeding, author=Sanjuanita Will PhD)]
+[DEBUG] 2021-04-22 08:41:45.044 [http-nio-8080-exec-6] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.049 [http-nio-8080-exec-7] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.049 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.050 [http-nio-8080-exec-7] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Widening Gyre, author=Lissa Larson)]
+[DEBUG] 2021-04-22 08:41:45.052 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.053 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [Book(id=12, title=The Widening Gyre, author=Lissa Larson)]
+[DEBUG] 2021-04-22 08:41:45.053 [http-nio-8080-exec-7] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.058 [http-nio-8080-exec-8] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.058 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.059 [http-nio-8080-exec-8] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=To Sail Beyond the Sunset, author=Ludivina Gibson DDS)]
+[DEBUG] 2021-04-22 08:41:45.061 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.061 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [Book(id=13, title=To Sail Beyond the Sunset, author=Ludivina Gibson DDS)]
+[DEBUG] 2021-04-22 08:41:45.062 [http-nio-8080-exec-8] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.067 [http-nio-8080-exec-9] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.067 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.068 [http-nio-8080-exec-9] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Down to a Sunless Sea, author=Miss Timika Feil)]
+[DEBUG] 2021-04-22 08:41:45.070 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.070 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [Book(id=14, title=Down to a Sunless Sea, author=Miss Timika Feil)]
+[DEBUG] 2021-04-22 08:41:45.071 [http-nio-8080-exec-9] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.075 [http-nio-8080-exec-10] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.075 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.076 [http-nio-8080-exec-10] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Things Fall Apart, author=Lyman Gutmann)]
+[DEBUG] 2021-04-22 08:41:45.078 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.079 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [Book(id=15, title=Things Fall Apart, author=Lyman Gutmann)]
+[DEBUG] 2021-04-22 08:41:45.080 [http-nio-8080-exec-10] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.084 [http-nio-8080-exec-1] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.085 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:41:45.085 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Things Fall Apart, author=Fidel Donnelly)]
+[DEBUG] 2021-04-22 08:41:45.087 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.087 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=16, title=Things Fall Apart, author=Fidel Donnelly)]
+[DEBUG] 2021-04-22 08:41:45.089 [http-nio-8080-exec-1] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:41:45.091 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:41:45.092 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:45.096 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:45.096 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:45.097 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:47.106 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:41:47.106 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:47.109 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:47.110 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:47.111 [http-nio-8080-exec-4] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:41:52.814 [http-nio-8080-exec-5] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:41:52.815 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:41:52.818 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:41:52.819 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:41:52.820 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:42:28.048 [http-nio-8080-exec-6] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:42:28.053 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:42:28.074 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:42:28.075 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:42:28.081 [http-nio-8080-exec-6] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:42:35.510 [http-nio-8080-exec-8] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:42:35.511 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:42:35.517 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:42:35.517 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:42:35.518 [http-nio-8080-exec-8] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:42:37.625 [http-nio-8080-exec-9] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:42:37.625 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:42:37.629 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:42:37.629 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:42:37.631 [http-nio-8080-exec-9] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:43:41.048 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:43:41.113 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:43:41.146 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:43:41.156 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:43:55.699 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:43:55.715 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:43:55.744 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:43:55.756 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:43:56.323 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:43:56.323 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:43:56.324 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:43:56.324 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:43:56.325 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1d4a5a78
+[DEBUG] 2021-04-22 08:43:56.326 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@60680a6c
+[DEBUG] 2021-04-22 08:43:56.326 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:43:56.326 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-22 08:43:56.335 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.341 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:43:56.501 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.502 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:43:56.544 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:43:56.687 [http-nio-8080-exec-2] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.688 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.721 [http-nio-8080-exec-2] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Now Sleeps the Crimson Petal, author=Mika Nolan)]
+[DEBUG] 2021-04-22 08:43:56.797 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.798 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [Book(id=7, title=Now Sleeps the Crimson Petal, author=Mika Nolan)]
+[DEBUG] 2021-04-22 08:43:56.800 [http-nio-8080-exec-2] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.804 [http-nio-8080-exec-3] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.805 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.806 [http-nio-8080-exec-3] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Last Temptation, author=Mr. Phuong Larkin)]
+[DEBUG] 2021-04-22 08:43:56.809 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.809 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Book(id=8, title=The Last Temptation, author=Mr. Phuong Larkin)]
+[DEBUG] 2021-04-22 08:43:56.810 [http-nio-8080-exec-3] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.815 [http-nio-8080-exec-4] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.816 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.817 [http-nio-8080-exec-4] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Moon by Night, author=Leigh Satterfield III)]
+[DEBUG] 2021-04-22 08:43:56.819 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.819 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [Book(id=9, title=The Moon by Night, author=Leigh Satterfield III)]
+[DEBUG] 2021-04-22 08:43:56.820 [http-nio-8080-exec-4] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.825 [http-nio-8080-exec-5] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.826 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.827 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Rosemary Sutcliff, author=Harold Hermann MD)]
+[DEBUG] 2021-04-22 08:43:56.830 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.831 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [Book(id=10, title=Rosemary Sutcliff, author=Harold Hermann MD)]
+[DEBUG] 2021-04-22 08:43:56.832 [http-nio-8080-exec-5] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.838 [http-nio-8080-exec-6] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.838 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.840 [http-nio-8080-exec-6] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Taming a Sea Horse, author=Dr. Kali Padberg)]
+[DEBUG] 2021-04-22 08:43:56.843 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.843 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [Book(id=11, title=Taming a Sea Horse, author=Dr. Kali Padberg)]
+[DEBUG] 2021-04-22 08:43:56.844 [http-nio-8080-exec-6] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.849 [http-nio-8080-exec-7] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.850 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.851 [http-nio-8080-exec-7] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Soldier's Art, author=Weston Kling)]
+[DEBUG] 2021-04-22 08:43:56.853 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.854 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [Book(id=12, title=The Soldier's Art, author=Weston Kling)]
+[DEBUG] 2021-04-22 08:43:56.855 [http-nio-8080-exec-7] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.859 [http-nio-8080-exec-8] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.859 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.860 [http-nio-8080-exec-8] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Eyeless in Gaza, author=Hulda Rohan)]
+[DEBUG] 2021-04-22 08:43:56.863 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.863 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [Book(id=13, title=Eyeless in Gaza, author=Hulda Rohan)]
+[DEBUG] 2021-04-22 08:43:56.865 [http-nio-8080-exec-8] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.870 [http-nio-8080-exec-9] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.870 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.871 [http-nio-8080-exec-9] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Lilies of the Field, author=Mrs. Deja Ferry)]
+[DEBUG] 2021-04-22 08:43:56.874 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.874 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [Book(id=14, title=Lilies of the Field, author=Mrs. Deja Ferry)]
+[DEBUG] 2021-04-22 08:43:56.875 [http-nio-8080-exec-9] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.879 [http-nio-8080-exec-10] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.880 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.881 [http-nio-8080-exec-10] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Oh! To be in England, author=Estrella Howe)]
+[DEBUG] 2021-04-22 08:43:56.883 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.884 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [Book(id=15, title=Oh! To be in England, author=Estrella Howe)]
+[DEBUG] 2021-04-22 08:43:56.885 [http-nio-8080-exec-10] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.889 [http-nio-8080-exec-1] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.890 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:43:56.891 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=This Side of Paradise, author=Ivan Sauer)]
+[DEBUG] 2021-04-22 08:43:56.893 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.893 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=16, title=This Side of Paradise, author=Ivan Sauer)]
+[DEBUG] 2021-04-22 08:43:56.896 [http-nio-8080-exec-1] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:43:56.898 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:43:56.899 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:43:56.903 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:43:56.903 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:43:56.905 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:44:01.952 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:44:01.952 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:44:01.956 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:01.956 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:44:01.958 [http-nio-8080-exec-4] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:44:08.206 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:44:08.218 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:44:08.240 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:44:08.248 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:44:08.659 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:44:08.659 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:44:08.660 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:44:08.660 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:44:08.661 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5629a587
+[DEBUG] 2021-04-22 08:44:08.661 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@37c4f0ef
+[DEBUG] 2021-04-22 08:44:08.661 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:44:08.662 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-22 08:44:08.662 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.663 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:44:08.670 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.671 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:44:08.673 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:44:08.816 [http-nio-8080-exec-2] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.817 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.820 [http-nio-8080-exec-2] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Heart Is a Lonely Hunter, author=Ms. Herschel Little)]
+[DEBUG] 2021-04-22 08:44:08.830 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.831 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [Book(id=7, title=The Heart Is a Lonely Hunter, author=Ms. Herschel Little)]
+[DEBUG] 2021-04-22 08:44:08.832 [http-nio-8080-exec-2] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.837 [http-nio-8080-exec-3] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.837 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.839 [http-nio-8080-exec-3] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Some Buried Caesar, author=Ernie Cummings)]
+[DEBUG] 2021-04-22 08:44:08.841 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.842 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Book(id=8, title=Some Buried Caesar, author=Ernie Cummings)]
+[DEBUG] 2021-04-22 08:44:08.843 [http-nio-8080-exec-3] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.848 [http-nio-8080-exec-4] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.848 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.849 [http-nio-8080-exec-4] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Curious Incident of the Dog in the Night-Time, author=Donnette Jacobson)]
+[DEBUG] 2021-04-22 08:44:08.852 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.853 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [Book(id=9, title=The Curious Incident of the Dog in the Night-Time, author=Donnette Jacobson)]
+[DEBUG] 2021-04-22 08:44:08.854 [http-nio-8080-exec-4] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.860 [http-nio-8080-exec-5] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.861 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.862 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Wildfire at Midnight, author=Margo Metz)]
+[DEBUG] 2021-04-22 08:44:08.864 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.864 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [Book(id=10, title=Wildfire at Midnight, author=Margo Metz)]
+[DEBUG] 2021-04-22 08:44:08.865 [http-nio-8080-exec-5] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.870 [http-nio-8080-exec-6] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.871 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.872 [http-nio-8080-exec-6] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=The Heart Is Deceitful Above All Things, author=Velva Schmeler)]
+[DEBUG] 2021-04-22 08:44:08.876 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.876 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [Book(id=11, title=The Heart Is Deceitful Above All Things, author=Velva Schmeler)]
+[DEBUG] 2021-04-22 08:44:08.878 [http-nio-8080-exec-6] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.883 [http-nio-8080-exec-7] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.884 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.885 [http-nio-8080-exec-7] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Arms and the Man, author=Mac Koss)]
+[DEBUG] 2021-04-22 08:44:08.888 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.889 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [Book(id=12, title=Arms and the Man, author=Mac Koss)]
+[DEBUG] 2021-04-22 08:44:08.891 [http-nio-8080-exec-7] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.896 [http-nio-8080-exec-8] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.896 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.898 [http-nio-8080-exec-8] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Waiting for the Barbarians, author=Martin Turcotte)]
+[DEBUG] 2021-04-22 08:44:08.901 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.901 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [Book(id=13, title=Waiting for the Barbarians, author=Martin Turcotte)]
+[DEBUG] 2021-04-22 08:44:08.903 [http-nio-8080-exec-8] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.908 [http-nio-8080-exec-9] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.908 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.910 [http-nio-8080-exec-9] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=If I Forget Thee Jerusalem, author=Katharine O'Connell)]
+[DEBUG] 2021-04-22 08:44:08.912 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.913 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [Book(id=14, title=If I Forget Thee Jerusalem, author=Katharine O'Connell)]
+[DEBUG] 2021-04-22 08:44:08.914 [http-nio-8080-exec-9] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.919 [http-nio-8080-exec-10] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.919 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.921 [http-nio-8080-exec-10] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Ego Dominus Tuus, author=Nickolas Glover)]
+[DEBUG] 2021-04-22 08:44:08.923 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.924 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [Book(id=15, title=Ego Dominus Tuus, author=Nickolas Glover)]
+[DEBUG] 2021-04-22 08:44:08.925 [http-nio-8080-exec-10] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.929 [http-nio-8080-exec-1] DispatcherServlet - POST "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.930 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:44:08.931 [http-nio-8080-exec-1] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=Tiger! Tiger!, author=Doug Heidenreich)]
+[DEBUG] 2021-04-22 08:44:08.934 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.934 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [Book(id=16, title=Tiger! Tiger!, author=Doug Heidenreich)]
+[DEBUG] 2021-04-22 08:44:08.936 [http-nio-8080-exec-1] DispatcherServlet - Completed 201 CREATED
+[DEBUG] 2021-04-22 08:44:08.939 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/", parameters={}
+[DEBUG] 2021-04-22 08:44:08.939 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:44:08.943 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:08.944 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:44:08.945 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:44:10.982 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:44:10.982 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findAllBooks()
+[DEBUG] 2021-04-22 08:44:10.986 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:44:10.986 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:44:10.987 [http-nio-8080-exec-4] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:45:23.869 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-22 08:45:23.897 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-22 08:45:23.911 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-22 08:45:23.918 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-22 08:45:24.114 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-22 08:45:24.115 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-22 08:45:24.115 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-22 08:45:24.115 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-22 08:45:24.116 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70cd796c
+[DEBUG] 2021-04-22 08:45:24.116 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@37e1a3de
+[DEBUG] 2021-04-22 08:45:24.117 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-22 08:45:24.117 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-22 08:45:24.117 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-22 08:45:24.118 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-22 08:45:25.123 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-22 08:45:25.125 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:45:25.125 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@167e6cf4]
+[WARN ] 2021-04-22 08:45:25.126 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: Timeout service]
+[DEBUG] 2021-04-22 08:45:25.127 [http-nio-8080-exec-1] DispatcherServlet - Completed 408 REQUEST_TIMEOUT
+[DEBUG] 2021-04-22 08:45:25.132 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/books/slow", parameters={}
+[DEBUG] 2021-04-22 08:45:25.132 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#findSlowBooks(HttpServletRequest)
+[DEBUG] 2021-04-22 08:45:25.141 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:45:25.142 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [[Book(id=1, title=Ulysses, author=James Joyce), Book(id=2, title=The Great Gatsby, author=F. Scott F (truncated)...]
+[DEBUG] 2021-04-22 08:45:25.144 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-22 08:48:03.539 [http-nio-8080-exec-5] DispatcherServlet - POST "/api/books", parameters={}
+[DEBUG] 2021-04-22 08:48:03.543 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.bookstore.controller.APIController#addBook(BookPOJO)
+[DEBUG] 2021-04-22 08:48:03.546 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [BookPOJO(title=a, author=b)]
+[DEBUG] 2021-04-22 08:48:03.557 [http-nio-8080-exec-5] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.bookstore.controller.CustomExceptionHandler#handleBookStoreException(BookStoreException, WebRequest)
+[DEBUG] 2021-04-22 08:48:03.558 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-22 08:48:03.558 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [vn.techmaster.bookstore.controller.APIError@227203b8]
+[WARN ] 2021-04-22 08:48:03.562 [http-nio-8080-exec-5] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.bookstore.exception.BookStoreException: New book violates constrains]
+[DEBUG] 2021-04-22 08:48:03.562 [http-nio-8080-exec-5] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-12-04 08:27:41.989 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-12-04 08:27:42.057 [restartedMain] RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-12-04 08:27:42.099 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-12-04 08:27:42.119 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
