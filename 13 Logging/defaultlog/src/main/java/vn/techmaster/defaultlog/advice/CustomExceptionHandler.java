@@ -1,4 +1,4 @@
-package vn.techmaster.bmiservice.controller;
+package vn.techmaster.defaultlog.advice;
 
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.core.Ordered;
@@ -13,8 +13,9 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import lombok.extern.slf4j.Slf4j;
-import vn.techmaster.bmiservice.exception.APIError;
-import vn.techmaster.bmiservice.exception.RecordNotFoundException;
+import vn.techmaster.defaultlog.exception.APIError;
+import vn.techmaster.defaultlog.exception.FilmException;
+
 
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @RestControllerAdvice
@@ -29,9 +30,10 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
   }
   
   
-  @ExceptionHandler(RecordNotFoundException.class)
-  public final ResponseEntity<APIError> handleUserNotFoundException(RecordNotFoundException ex, WebRequest request) {
-    APIError apiError = new APIError("Record Not Found", ex.getLocalizedMessage(), ex.getModel(), "Google Cloud : 122.222.11.105");
+  @ExceptionHandler(FilmException.class)
+  public final ResponseEntity<APIError> handleUserNotFoundException(FilmException ex, WebRequest request) {
+    APIError apiError = new APIError("Film Exception", ex.getLocalizedMessage(), ex.getFilmid());
+    log.error(ex.toString());
     return new ResponseEntity<>(apiError, HttpStatus.NOT_FOUND);
   }
   
