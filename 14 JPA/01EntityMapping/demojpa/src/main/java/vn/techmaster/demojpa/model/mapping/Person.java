@@ -14,6 +14,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
+import org.hibernate.annotations.Formula;
+
 import lombok.Data;
 
 @Entity(name = "person")
@@ -33,6 +35,7 @@ public class Person {
   private Date birthday;
 
   @Column(name="sex")
+  @Formula(value = "case when gender=Male then true else false end")
   private Boolean sex;
 
   @Transient
