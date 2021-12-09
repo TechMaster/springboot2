@@ -1,0 +1,5 @@
+package vn.techmaster.blog.DTO;
+
+import java.time.LocalDateTime;
+
+public record PostPOJO (Long id, String title, String content, Long user_id, String userFullName, LocalDateTime lastUpdate){}
