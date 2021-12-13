@@ -1,0 +1,22 @@
+/*
+ * Copyright MapStruct Authors.
+ *
+ * Licensed under the Apache License version 2.0, available at http://www.apache.org/licenses/LICENSE-2.0
+ */
+package org.mapstruct.example.mapper;
+
+import org.mapstruct.example.dto.GolfPlayerDto;
+import org.mapstruct.example.dto.GolfPlayer;
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
+
+@Mapper
+public interface GolfPlayerMapper {
+
+    GolfPlayerMapper INSTANCE = Mappers.getMapper( GolfPlayerMapper.class );
+
+    GolfPlayerDto toDto(GolfPlayer player);
+
+    GolfPlayer toPlayer(GolfPlayerDto player);
+
+}

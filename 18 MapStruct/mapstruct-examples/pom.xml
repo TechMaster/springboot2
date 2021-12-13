@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ Copyright MapStruct Authors.
+
+ Licensed under the Apache License version 2.0, available at http://www.apache.org/licenses/LICENSE-2.0
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.mapstruct.examples</groupId>
+    <artifactId>mapstruct-examples</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>mapstruct-field-mapping</module>
+        <module>mapstruct-iterable-to-non-iterable</module>
+        <module>mapstruct-lombok</module>
+        <module>mapstruct-mapping-from-map</module>
+        <module>mapstruct-mapping-with-cycles</module>
+        <module>mapstruct-nested-bean-mappings</module>
+        <module>mapstruct-rounding</module>
+        <module>mapstruct-spi-accessor-naming</module>
+        <module>mapstruct-protobuf3</module>
+        <module>mapstruct-updatemethods-1</module>
+        <module>mapstruct-jpa-child-parent</module>
+        <module>mapstruct-lookup-entity-with-id</module>
+        <module>mapstruct-metadata-with-annotations</module>
+        <module>mapstruct-suppress-unmapped</module>
+        <module>mapstruct-clone</module>
+        <module>mapstruct-mapper-repo</module>
+    </modules>
+
+    <profiles>
+        <profile>
+            <id>java14+</id>
+            <activation>
+                <jdk>[14,)</jdk>
+            </activation>
+            <modules>
+                <module>mapstruct-record</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>java14-</id>
+            <activation>
+                <jdk>(,14)</jdk>
+            </activation>
+            <modules>
+                <module>mapstruct-quarkus</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>java16-</id>
+            <activation>
+                <jdk>(,16)</jdk>
+            </activation>
+            <modules>
+                <!--
+                    Kotlin kapt currently has problems on Java 16+.
+                    See https://youtrack.jetbrains.com/issue/KT-45545
+                 -->
+                <module>mapstruct-kotlin</module>
+            </modules>
+        </profile>
+    </profiles>
+</project>

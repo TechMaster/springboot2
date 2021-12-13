@@ -12,10 +12,12 @@ import vn.techmaster.blog.model.Post;
 import vn.techmaster.blog.model.User;
 import vn.techmaster.blog.repository.PostRepository;
 import vn.techmaster.blog.repository.UserRepository;
+import vn.techmaster.blog.testbase.H2TestBase;
+import vn.techmaster.blog.testbase.MySQLTestBase;
 import vn.techmaster.blog.testbase.PostgresqlTestBase;
 
 
-public class PostRepositoryTest extends PostgresqlTestBase{
+public class PostRepositoryTest extends H2TestBase{
   @Autowired  private UserRepository userRepo;
   @Autowired  private PostRepository postRepo;
   

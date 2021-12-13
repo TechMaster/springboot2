@@ -1,0 +1,27 @@
+# Eclipse
+.metadata
+.classpath
+.project
+.settings
+.factorypath
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Build
+target
+test-output
+/*/build
+/*/*/build
+/*/bin
+/*/out
+/*/*/out
+
+# Gradle
+.gradle
+
+# Bazel
+**/bazel-*

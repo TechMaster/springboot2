@@ -1,0 +1,30 @@
+apply plugin: 'com.google.protobuf'
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    implementation project(':spi-impl')
+    implementation "org.mapstruct:mapstruct:$mapstructVersion"
+    implementation 'com.google.protobuf:protobuf-java:3.6.1'
+
+    testImplementation 'junit:junit:4.13.1'
+    testAnnotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
+
+    annotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
+    annotationProcessor project(':spi-impl')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir file("${buildDir}/generated/source/proto")
+        }
+    }
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.6.1"
+    }
+}
