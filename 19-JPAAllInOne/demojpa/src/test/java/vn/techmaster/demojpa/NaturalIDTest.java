@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import vn.techmaster.demojpa.model.naturalid.Person;
 
 @DataJpaTest
-@Sql({"/naturalperson.sql"})
+@Sql({"/naturalperson.sql"}) //Load dữ liệu trong lúc test
 public class NaturalIDTest {
   @Autowired  private EntityManager em;
 

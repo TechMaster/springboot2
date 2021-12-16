@@ -22,15 +22,17 @@ import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 @DataJpaTest
-@Sql({ "/car.sql" })
+@Sql({ "/car.sql" })  //Nạp dữ liệu car.sql vào để kiểm thử
 public class CarRepositoryTests {
-  @Autowired private CarRepository carRepository;;
+  @Autowired private CarRepository carRepository;
   @Autowired private EntityManager em;
+
+  //Khi nào dùng EntityManager và khi nào dùng Repository?
 
   @Test
   void testQueryUsingEntityManager() {
     //Chú ý ở đây phải dùng tên của entity chứ không không dùng tên bảng trong CSDL
-    Query jpqlQuery = em.createQuery("SELECT c FROM oto c WHERE c.id=:id");  //Đây là JPQL
+    Query jpqlQuery = em.createQuery("SELECT o FROM oto o WHERE o.id=:id");  //Đây là JPQL
     jpqlQuery.setParameter("id", 1L);
     Car car = (Car) jpqlQuery.getSingleResult();
     System.out.println(car);
@@ -45,7 +47,7 @@ public class CarRepositoryTests {
   }
 
   @Test
-  void testNamedQuery() {
+  void testNamedQuery() { //Không khuyến cáo dùng vì nó không tách bạch code
     Query namedQuery = em.createNamedQuery("Car.findById");
     namedQuery.setParameter("id", 1L);
     Car car =  (Car) namedQuery.getSingleResult();
@@ -54,6 +56,9 @@ public class CarRepositoryTests {
 
   @Test
   void testNativeQuery() {
+    //Native SQL Query sẽ gửi trực tiếp xuống CSDL
+    //Khuyến cáo tránh dùng vì Native SQL có thể không xử lý được lỗ hổng bảo mật SQL Inject
+    //Không tương thích tốt với nhiều CSDL khác nhau, có nghĩa chỉ viết cụ thể cho 1 CSDL
     Query nativeQuery = em.createNativeQuery("SELECT * FROM car WHERE id=:id", Car.class);  //Không dùng oto mà dùng car
     nativeQuery.setParameter("id", 1L);
     Car car = (Car) nativeQuery.getSingleResult();
@@ -118,7 +123,7 @@ public class CarRepositoryTests {
 
   @Test
   public void top5CarMakerTest() {
-    List<MakerCount> top5Makers = carRepository.topCarMaker(PageRequest.of(0, 5));
+    List<MakerCount> top5Makers = carRepository.topCarMaker(PageRequest.of(1, 5));
     top5Makers.forEach(System.out::println);
     assertThat(top5Makers).hasSize(5);
   }

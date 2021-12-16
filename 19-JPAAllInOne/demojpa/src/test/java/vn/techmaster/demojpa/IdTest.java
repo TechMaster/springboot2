@@ -5,12 +5,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import javax.persistence.EntityManager;
+
 import vn.techmaster.demojpa.model.id.Bar;
 import vn.techmaster.demojpa.model.id.TableID;
 
 @DataJpaTest
 public class IdTest {
   @Autowired  private TestEntityManager testEntityManager;
+  @Autowired  private EntityManager em;
 
   @Test
   void randomIDGenerator() {
@@ -24,12 +28,15 @@ public class IdTest {
   void tableIdGenerator() {
     TableID r1 = new TableID();
     r1.setName("Buratino");
-    Long id1 = (Long) testEntityManager.persistAndGetId(r1);
-    System.out.println(id1);
+    em.persist(r1);
+    //Long id1 = (Long) em.persistAndGetId(r1);
+    System.out.println(r1.getId());
 
     TableID r2 = new TableID();
-    r2.setName("Buratino");
-    Long id2 = (Long) testEntityManager.persistAndGetId(r2);
-    System.out.println(id2);
+    r2.setName("Buratino2");
+    //Long id2 = (Long) testEntityManager.persistAndGetId(r2);
+    em.persist(r2);
+    System.out.println(r2.getId());
+    em.flush();
   }
 }
