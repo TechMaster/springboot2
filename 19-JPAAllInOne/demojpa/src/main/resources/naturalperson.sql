@@ -1,0 +1,1 @@
+insert into naturalperson (email) values ('bill@microsoft.com');
