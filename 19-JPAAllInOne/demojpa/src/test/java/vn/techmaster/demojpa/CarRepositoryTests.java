@@ -126,6 +126,7 @@ public class CarRepositoryTests {
     List<MakerCount> top5Makers = carRepository.topCarMaker(PageRequest.of(1, 5));
     top5Makers.forEach(System.out::println);
     assertThat(top5Makers).hasSize(5);
+
   }
 
 }

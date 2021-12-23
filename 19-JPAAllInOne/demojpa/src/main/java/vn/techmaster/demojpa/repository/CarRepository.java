@@ -26,6 +26,9 @@ public interface CarRepository extends JpaRepository<Car, Long> {
   @Query("SELECT o FROM oto AS o WHERE o.year=:year")
   List<Car> listCarInYear(@Param("year") int year);
 
+  @Query(value = "SELECT * FROM car WHERE id=:id", nativeQuery = true)
+  List<Car> getCarById(@Param("id") long id);
+
   // Phải ghi rõ domain, package của kiểu trả về vn.techmaster.demojpa.model.mapping.MakerCount
   @Query("SELECT new vn.techmaster.demojpa.repository.MakerCount(c.maker, COUNT(*)) " + 
   "FROM oto AS c GROUP BY c.maker ORDER BY c.maker ASC")
@@ -35,6 +38,5 @@ public interface CarRepository extends JpaRepository<Car, Long> {
   "FROM oto AS c GROUP BY c.maker ORDER BY COUNT(*) DESC")
   List<MakerCount> topCarMaker(Pageable pageable);
   //Chú ý PSQL không hỗ trợ cú pháp SELECT TOP hay LIMIT, thay vào đó phải truyền vào Pageable pageable
-
 }
 

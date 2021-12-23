@@ -12,7 +12,7 @@
 	<artifactId>vincinema</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>vincinema</name>
-	<description>Giữ chỗ, đặt vé, thanh toán</description>
+	<description>Giữ chỗ, đặt vé, thanh toán</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
