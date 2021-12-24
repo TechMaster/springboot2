@@ -16,11 +16,17 @@ import javax.persistence.Transient;
 
 import org.hibernate.annotations.Formula;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity(name = "person")
 @Table(name = "person")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Person {
   @Id  
   Long id;

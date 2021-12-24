@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import javax.annotation.PreDestroy;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,6 +20,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
+import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
@@ -55,6 +57,16 @@ public class Post {
     @PreUpdate //Khi cập nhật record
     public void preUpdate() {
         lastUpdate = LocalDateTime.now();
+    }
+    
+    @PreRemove
+    public void preRemove() {
+
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        
     }
 
     public Post(String title, String content) {

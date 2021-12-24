@@ -65,6 +65,8 @@ public class PersonController {
     @PathVariable("date") String date) throws ParseException {
       SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
       var datebefore  = formatter.parse(date);
+
+      personRepo.flush();
     return ResponseEntity.ok().body(
       personRepo.findByBirthdayBeforeOrderByBirthdayDesc(datebefore)
       );

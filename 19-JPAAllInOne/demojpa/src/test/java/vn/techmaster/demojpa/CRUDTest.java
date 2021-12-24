@@ -1,12 +1,13 @@
 package vn.techmaster.demojpa;
 
 import javax.persistence.EntityManager;
-
+import javax.transaction.Transactional;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
+import net.bytebuddy.utility.RandomString;
 import vn.techmaster.demojpa.model.id.Bar;
 import vn.techmaster.demojpa.repository.BarRepository;
 
@@ -67,6 +68,17 @@ public class CRUDTest {
     assertThat(foundBar).isEqualTo(bar);
     barRepository.delete(foundBar);
     assertThat(barRepository.existsById(id)).isFalse();
+  }
+
+  @Test
+  @Transactional
+  void testInsertQuery() {   
+    //Chú ý JPQL không hỗ trợ lệnh Insert 
+    em.createNativeQuery("INSERT INTO bar (id, name) VALUES (?, ?)")
+    .setParameter(1, RandomString.make(10))
+    .setParameter(2, "Rock")
+    .executeUpdate();
+    em.flush();
   }
 
 }
