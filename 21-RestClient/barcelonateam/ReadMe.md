@@ -92,17 +92,17 @@ Vào [pom.xml](pom.xml) bổ xung:
 <dependency>
   <groupId>io.github.openfeign</groupId>
   <artifactId>feign-core</artifactId>
-  <version>11.1</version>
+  <version>11.8</version>
 </dependency>
 <dependency>
   <groupId>io.github.openfeign</groupId>
   <artifactId>feign-gson</artifactId>
-  <version>11.1</version>
+  <version>11.8</version>
 </dependency>
 <dependency>
   <groupId>io.github.openfeign</groupId>
   <artifactId>feign-okhttp</artifactId>
-  <version>11.1</version>
+  <version>11.8</version>
 </dependency>
 ```
 Thư viện ```feign-okhttp``` là tuỳ chọn khi bạn muốn dùng OkHttp là thư viện network phía dưới cho OpenFeign.
