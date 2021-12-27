@@ -18,7 +18,6 @@ public class EntityEventTest {
     AuditLog al = new AuditLog();
     al.setMessage("Version 1.0");
     em.persist(al);
-    long id = al.getId();
     em.flush();
 
     al.setMessage("Version 1.1");
