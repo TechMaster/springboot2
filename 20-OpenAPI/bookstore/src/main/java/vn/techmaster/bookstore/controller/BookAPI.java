@@ -43,8 +43,7 @@ public class BookAPI {
   @GetMapping("/{bookId}")
   @Operation(summary = "Get a book by id")
   public ResponseEntity<Book> findBookById(
-    @Parameter(description = "id of book to be searched") 
-    @PathVariable long bookId) {
+      @Parameter(description = "id of book to be searched") @PathVariable long bookId) {
     Optional<Book> optionalBook = bookService.findById(bookId);
     if (optionalBook.isPresent()) {
       return ResponseEntity.ok(optionalBook.get()); // return 200, with json body
@@ -66,7 +65,7 @@ public class BookAPI {
 
   @PutMapping("/{bookId}")
   @Operation(summary = "Update a book by id", parameters = {
-      @Parameter(name = "bookId", in = ParameterIn.QUERY, required = true, description = "id của sách") })
+      @Parameter(name = "bookId", in = ParameterIn.PATH, required = true, description = "id của sách") })
   public ResponseEntity<Void> updateBook(@RequestBody BookPOJO book, @PathVariable long bookId) {
     try {
       bookService.update(bookId, book);
