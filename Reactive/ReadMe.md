@@ -22,7 +22,7 @@ https://nickolasfisher.com/blog/How-to-Make-Concurrent-Service-API-Calls-in-Java
 https://howtodoinjava.com/spring-webflux/spring-webflux-tutorial/
 
 https://nickolasfisher.com/blog/The-Difference-Between-a-Reactive-NonBlocking-Model-and-Classic-Asynchronous-Code
-
+https://nickolasfisher.com/blog/How-to-Configure-Reactive-Netty-in-Spring-Boot-in-Depth
 
 https://howtodoinjava.com/spring-webflux/spring-webflux-tutorial/
 
