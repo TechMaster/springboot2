@@ -18,6 +18,7 @@ public class BookclientApplication {
 	}
 
 	@Bean
+	//RestTemplate là một blocking web client
 	public RestTemplate restTemplate() {
 			return new RestTemplate();
 	}
@@ -35,8 +36,8 @@ public class BookclientApplication {
 	*/
 	public Executor executor() {
 			ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-			executor.setCorePoolSize(20);
-			executor.setMaxPoolSize(20);
+			executor.setCorePoolSize(30);
+			executor.setMaxPoolSize(30);
 			executor.setQueueCapacity(500);
 			executor.initialize();
 			return executor;

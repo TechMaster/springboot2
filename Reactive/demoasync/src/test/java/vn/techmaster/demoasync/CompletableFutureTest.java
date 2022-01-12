@@ -41,8 +41,10 @@ class CompletableFutureTest {
 	void test_Future() throws InterruptedException, ExecutionException {
 		ExecutorService threadpool = Executors.newCachedThreadPool();
 		long number = 20L;
+		//Chờ đợi một kết quả trả về trong tương lai kiểu Long
 		Future<Long> futureTask = threadpool.submit(() -> factorial(number));
 
+		//Đoạn loop để blocking
 		while (!futureTask.isDone()) {
 			System.out.println("FutureTask is not finished yet...");
 		}
@@ -66,7 +68,7 @@ class CompletableFutureTest {
 			}
 			System.out.println(Thread.currentThread().getName());
 		};
-
+		//Mô tả một tác vụ sẽ chạy, hoàn thành trong tương lai, nhưng không trả về kết quả
 		CompletableFuture<Void> future = CompletableFuture.runAsync(myTask);
 		future.get();
 	}
@@ -162,7 +164,7 @@ class CompletableFutureTest {
 	 * khác biệt thenApply và thenAccept là gì?
 	 */
 	void apply_accept_run() {
-		int i = 10;
+		int i = 0;
 		System.out.printf("-- input: %s --%n", i);
 		CompletableFuture
 				.supplyAsync(() -> { // Truyền vào biểu thức Lambda
@@ -192,7 +194,7 @@ class CompletableFutureTest {
 	void run_multiple_future_paralell() throws InterruptedException, ExecutionException {
 		CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> {
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(800);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -209,6 +211,8 @@ class CompletableFutureTest {
 		CompletableFuture<String> future3 = CompletableFuture.supplyAsync(() -> "World");
 		Instant start = Instant.now();
 		CompletableFuture<Void> combinedFuture = CompletableFuture.allOf(future1, future2, future3);
+		
+		//Blocking lại chờ cho đến khi nào cả 3 tác vụ trong tương lai trả về
 		combinedFuture.get();
 
 		System.out.println(Duration.between(start, Instant.now()).toMillis() + " milliseconds");
@@ -220,6 +224,8 @@ class CompletableFutureTest {
 		assertThat(future1.isDone());
 		assertThat(future2.isDone());
 		assertThat(future3.isDone());
+
+		//TODO: Các bạn hãy viết hàm WhenComplete để in ra kết quả ngay khi mỗi tác vụ trả về
 	}
 
 	@Test

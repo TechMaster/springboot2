@@ -24,7 +24,7 @@ public class HomeController {
     Instant start = Instant.now();
     for (int i = 0; i < 100; i++) {
       webClient.get().uri("/api/randombook").accept(MediaType.APPLICATION_JSON)
-          .retrieve()
+          .retrieve() //exchange?
           .bodyToMono(Book.class)
           .doOnSuccess(book -> System.out.println(Thread.currentThread() + " gets book " + book.title()))
           .subscribe();

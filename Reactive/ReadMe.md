@@ -1,3 +1,5 @@
+https://www.baeldung.com/reactor-core
+
 https://medium0.com/pictet-technologies-blog/build-a-collaborative-web-application-using-reactive-programming-b6d6b8c9aef4
 
 
@@ -35,3 +37,10 @@ https://developer.okta.com/blog/2018/09/25/spring-webflux-websockets-react
 https://blog.monkey.codes/how-to-build-a-chat-app-using-webflux-websockets-react/
 
 https://alistapart.com/article/the-future-of-web-software-is-html-over-websockets/
+
+https://ozenero.com/reactor-create-flux-and-mono-simple-ways-to-create-publishers-reactive-programming
+
+
+https://olegvaraksin.medium.com/performing-long-running-tasks-in-non-blocking-manner-with-javas-completablefuture-and-reactor-s-e647cbd8885b
+
+https://youtu.be/WcUlm4Yu56A

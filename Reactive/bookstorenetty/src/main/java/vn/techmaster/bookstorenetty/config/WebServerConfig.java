@@ -24,8 +24,9 @@ class EventLoopNettyCustomizer implements NettyServerCustomizer {
 
   @Override
   public HttpServer apply(HttpServer httpServer) {
-      EventLoopGroup eventLoopGroup = new NioEventLoopGroup();
-      eventLoopGroup.register(new NioServerSocketChannel());
-      return httpServer.runOn(eventLoopGroup);
+    //Cấu hình một nhóm người bán hàng theo phong cách Non-Blocking
+    EventLoopGroup eventLoopGroup = new NioEventLoopGroup(8);
+    eventLoopGroup.register(new NioServerSocketChannel());
+    return httpServer.runOn(eventLoopGroup);
   }
 }
