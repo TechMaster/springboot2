@@ -1,7 +1,7 @@
+https://projectreactor.io/learn
+https://hantsy.github.io/spring-reactive-sample/start/introduction.html
+
 https://www.baeldung.com/reactor-core
-
-https://medium0.com/pictet-technologies-blog/build-a-collaborative-web-application-using-reactive-programming-b6d6b8c9aef4
-
 
 https://medium.com/geekculture/creating-a-crud-app-with-quarkus-reactive-hibernate-panache-and-graphql-using-a-postgresql-216ecd75ee52
 
