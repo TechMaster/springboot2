@@ -1,6 +1,14 @@
 https://projectreactor.io/learn
 https://hantsy.github.io/spring-reactive-sample/start/introduction.html
 
+https://blog.monkey.codes/how-to-build-a-chat-app-using-webflux-websockets-react/
+
+https://mkyong.com/spring-boot/spring-boot-webflux-thymeleaf-reactive-example/
+
+
+https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux
+
+
 https://www.baeldung.com/reactor-core
 
 https://medium.com/geekculture/creating-a-crud-app-with-quarkus-reactive-hibernate-panache-and-graphql-using-a-postgresql-216ecd75ee52

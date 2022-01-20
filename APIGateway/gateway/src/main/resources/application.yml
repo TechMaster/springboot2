@@ -8,9 +8,9 @@ spring:
         - id: book
           uri: http://localhost:8081/
           predicates:
-          - Path=/book/**
+          - Path=/api/book/**
           filters:
-          - StripPrefix=1
+          - StripPrefix=2
         - id: film
           uri: http://localhost:8082/
           predicates:

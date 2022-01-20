@@ -13,6 +13,9 @@ import java.util.List;
 public class ProductController {
 	@GetMapping("products")
 	public List<Product> getProducts() {		 
-		return new ArrayList<>(List.of(new Product("Nike 360", 100), new Product("Sony WXMH4", 200)));
+		return new ArrayList<>(List.of(new Product("Nike 360", 100), 
+		new Product("Sony WXMH4", 200),
+		new Product("Banh Bao", 20),
+		new Product("Banh Ngot", 12)));
 	}
 }

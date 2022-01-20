@@ -16,6 +16,7 @@ import com.github.javafaker.Book;
 import com.github.javafaker.Faker;
 
 import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
 import reactor.util.function.Tuple2;
 
 @Slf4j
@@ -43,6 +44,7 @@ class MonoTest {
 	 */
 
 	void testLongTaskReturnMono() {
+
 		Instant start = Instant.now(); // Tính mốc thời gian
 		Mono<String> monoString = Mono.fromCallable(() -> {
 			try {
@@ -61,9 +63,9 @@ class MonoTest {
 
 	@Test
 	/*
-	Tạo Mono từ một CompletableFuture
-	Trường hợp này phải dùng Thread.sleep rất dở
-	*/
+	 * Tạo Mono từ một CompletableFuture
+	 * Trường hợp này phải dùng Thread.sleep rất dở
+	 */
 	void testMonoFromFuture() throws InterruptedException {
 		Supplier<String> guessAWord = () -> {
 			try {
@@ -83,8 +85,8 @@ class MonoTest {
 
 	@Test
 	/*
-	Tạo Mono từ một CompletableFuture. Cách 
-	*/
+	 * Tạo Mono từ một CompletableFuture. Cách
+	 */
 	void testMonoFromFutureBlock() throws InterruptedException {
 		Supplier<String> guessAWord = () -> {
 			try {
@@ -100,23 +102,22 @@ class MonoTest {
 		var aMono = Mono.fromFuture(future);
 		aMono.subscribe(System.out::println);
 		System.out.println("Đoạn lệnh này sẽ in ra trước");
-		//Dùng block sẽ chờ khi nào aMono có kết quả trả về
+		// Dùng block sẽ chờ khi nào aMono có kết quả trả về
 		aMono.block();
 	}
 
-
 	@Test
 	/*
-		Mono<Book> one = this.webClient...
-		Mono<Bear> two = this.webClient...
-
-		// we want all requests to happen concurrently
-		Mono<Void> all = Mono.when(one, two);
-		// we subscribe and then wait for all to be done
-		all.block();
-	*/
+	 * Mono<Book> one = this.webClient...
+	 * Mono<Bear> two = this.webClient...
+	 * 
+	 * // we want all requests to happen concurrently
+	 * Mono<Void> all = Mono.when(one, two);
+	 * // we subscribe and then wait for all to be done
+	 * all.block();
+	 */
 	void testMonoWhenBlock() {
-		Faker faker = new Faker();  
+		Faker faker = new Faker();
 		Supplier<Book> getBook = () -> {
 			try {
 				Thread.sleep(1000);
@@ -127,7 +128,7 @@ class MonoTest {
 			return faker.book();
 		};
 
-		var one  = Mono.fromFuture(CompletableFuture.supplyAsync(getBook));
+		var one = Mono.fromFuture(CompletableFuture.supplyAsync(getBook));
 		one.subscribe(System.out::println);
 
 		Supplier<Beer> getBeer = () -> {
@@ -140,16 +141,16 @@ class MonoTest {
 			return faker.beer();
 		};
 
-		var two  = Mono.fromFuture(CompletableFuture.supplyAsync(getBeer));
+		var two = Mono.fromFuture(CompletableFuture.supplyAsync(getBeer));
 		two.subscribe(System.out::println);
 
-		Mono<Void> all = Mono.when(one, two); //Tạo một Mono chờ khi cả 2 Mono hoàn thành
-		all.block(); //thực sự block thread này để đợi kết quả
+		Mono<Void> all = Mono.when(one, two); // Tạo một Mono chờ khi cả 2 Mono hoàn thành
+		all.block(); // thực sự block thread này để đợi kết quả
 	}
 
 	@Test
 	void testMonoZip() {
-		Faker faker = new Faker();  
+		Faker faker = new Faker();
 		Supplier<Book> getBook = () -> {
 			try {
 				Thread.sleep(1000);
@@ -160,7 +161,7 @@ class MonoTest {
 			return faker.book();
 		};
 
-		var one  = Mono.fromFuture(CompletableFuture.supplyAsync(getBook));
+		var one = Mono.fromFuture(CompletableFuture.supplyAsync(getBook));
 		Supplier<Beer> getBeer = () -> {
 			try {
 				Thread.sleep(1200);
@@ -171,30 +172,31 @@ class MonoTest {
 			return faker.beer();
 		};
 
-		var two  = Mono.fromFuture(CompletableFuture.supplyAsync(getBeer));
+		var two = Mono.fromFuture(CompletableFuture.supplyAsync(getBeer));
 
-		Mono<Tuple2<Book, Beer>> all = Mono.zip(one, two); //Ghép hai dữ liệu trả về vào kiểu Tuple2
+		Mono<Tuple2<Book, Beer>> all = Mono.zip(one, two); // Ghép hai dữ liệu trả về vào kiểu Tuple2
 
-		//Viết hàm hứng dữ liệu trả về
+		// Viết hàm hứng dữ liệu trả về
 		all.subscribe((data) -> {
 			System.out.println("book " + data.getT1() + ", beer " + data.getT2());
 		});
-		all.block(); //Cần phải có lệnh này thì
+		all.block(); // Cần phải có lệnh này thì
 	}
 
 	@Test
-  /* Nếu lỗi xuất hiện trong Mono
-  */
-  void testMonoerror() {
-    Mono<?> mono = Mono.just("Hello World")
-		.then(Mono.error(new RuntimeException("Cannot connect to REST")))
-		.log();
+	/*
+	 * Nếu lỗi xuất hiện trong Mono
+	 */
+	void testMonoerror() {
+		Mono<?> mono = Mono.just("Hello World")
+				.then(Mono.error(new RuntimeException("Cannot connect to REST")));
 
-		mono.subscribe(e -> {
-			if (e instanceof RuntimeException) {
-				System.out.println(((RuntimeException) e).getCause());
-			}
-		});
-  }
+
+		StepVerifier
+				.create(mono)
+				.expectErrorMatches(throwable -> throwable instanceof RuntimeException &&
+						throwable.getMessage().equals("Cannot connect to REST"))
+				.verify();
+	}
 
 }

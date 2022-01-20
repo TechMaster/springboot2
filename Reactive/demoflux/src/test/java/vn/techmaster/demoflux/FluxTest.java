@@ -2,20 +2,38 @@ package vn.techmaster.demoflux;
 
 import org.junit.jupiter.api.Test;
 
-import lombok.extern.slf4j.Slf4j;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.Duration;
-import java.time.Instant;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import reactor.core.publisher.Flux;
 
-@Slf4j
 public class FluxTest {
+  @Test
+  /*
+  flux.map() sẽ tạo ra một đối tượng Flux mới. Do đó flux2 sẽ khác flux
+  */
+	void testMap1() {
+		Flux<String> flux = Flux.just("A");
+		Flux<String> flux2 = flux.map(s -> "foo" + s);
+    assertThat(flux2).isNotEqualTo(flux);
+		flux.subscribe(System.out::println);
+    flux2.subscribe(System.out::println);
+	}
+
+  @Test
+  /*
+
+  */
+	void testMap2() {
+		Flux<String> flux = Flux.just("A");
+		flux.map(s -> "foo" + s).subscribe(System.out::println);
+	}
+
   @Test
   void testFluxMap() {
     Flux<String> cars = Flux.just("Fiat", "Audi", "BMW");
