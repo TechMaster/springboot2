@@ -63,7 +63,7 @@ class PostController {
     }
 
     /*
-    Server Sent Event
+    Server Sent Event, hiển thị Post mới nhất
     */
     @GetMapping(value = "/latest", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Post> messageStream() {

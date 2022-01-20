@@ -27,6 +27,10 @@ public class Fluxh2reactiveApplication {
 		SpringApplication.run(Fluxh2reactiveApplication.class, args);
 	}
 
+	/*
+	Bình thường trong dự án Spring Boot WebFlux, thì không thể truy cập h2 console
+	Cấu hình để H2-Console có thể xem được phải dùng cổng khác với cổng Netty đang phục vụ
+	*/
 	@Component
 	public class H2 {
 
@@ -46,6 +50,8 @@ public class Fluxh2reactiveApplication {
 		}
 	}
 
+	/*
+	*/
 	@Component
 	@Slf4j
 	@RequiredArgsConstructor
