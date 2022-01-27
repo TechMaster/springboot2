@@ -85,7 +85,7 @@ class MonoTest {
 
 	@Test
 	/*
-	 * Tạo Mono từ một CompletableFuture. Cách
+	 * Tạo Mono từ một CompletableFuture. Sử dụng block để chờ
 	 */
 	void testMonoFromFutureBlock() throws InterruptedException {
 		Supplier<String> guessAWord = () -> {
